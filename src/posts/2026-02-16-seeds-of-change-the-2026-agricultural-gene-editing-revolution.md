@@ -1,7 +1,7 @@
 ---
 title: "Seeds of Change: The 2026 Agricultural Gene-Editing Revolution"
 date: 2026-02-16
-description: "For thousands of years, farming has been a game of patience. Farmers would cross-breed plants and wait seasons—sometimes decades—to see if they could tease out a slightly larger fruit or a slightly tougher stalk. But as of early 2026, the \"wait-and-see\" era of agriculture is officially over. We have entered the age of Precision Domesticaton. […]"
+description: "For thousands of years, farming has been a game of patience. Farmers would cross-breed plants and wait seasons—sometimes decades—to see if they could tease out a slightly larger fruit or a slightly tougher stalk."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/02/16/seeds-of-change-the-2026-agricultural-gene-editing-revolution/"
 ---
 

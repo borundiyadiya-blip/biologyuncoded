@@ -1,7 +1,7 @@
 ---
 title: "MIT’s 50‑Cent DNA Sensor: Democratizing Diagnostics with CRISPR"
 date: 2025-07-18
-description: "Imagine a device so affordable and simple that anyone could test for diseases like cancer, HIV, or the flu—right at home—without needing a lab or refrigeration. MIT researchers have turned that dream into reality with a groundbreaking 50-cent DNA sensor, using CRISPR technology and gold-leaf electrodes. Here’s how this low-cost innovation works and why it […]"
+description: "Imagine a device so affordable and simple that anyone could test for diseases like cancer, HIV, or the flu—right at home—without needing a lab or refrigeration."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/18/mits-50%e2%80%91cent-dna-sensor-democratizing-diagnostics-with-crispr/"
 ---
 

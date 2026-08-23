@@ -1,14 +1,11 @@
 ---
 title: "Digital Human Twins: A New Frontier in Personalised Healthcare"
 date: 2025-05-26
-description: "What if doctors could test new treatments, predict future health issues, or even simulate surgery—on you—without ever touching your body? It sounds like science fiction, but it’s quickly becoming a reality. The technology is called a digital human twin: a virtual version of your body, built from your real-world medical data. It looks like you, […]"
+description: "What if doctors could test new treatments, predict future health issues, or even simulate surgery—on you—without ever touching your body? It sounds like science fiction, but it’s quickly becoming a reality."
 tags:
-  - "ai"
-  - "digital human twin"
-  - "digital twin"
-  - "Diya Borundiya"
-  - "human twin"
-  - "personalised healthcare"
+  - "AI"
+  - "Digital twins"
+  - "Precision medicine"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/05/26/digital-human-twins-a-new-frontier-in-personalised-healthcare/"
 ---
 

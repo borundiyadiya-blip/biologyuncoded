@@ -1,13 +1,11 @@
 ---
 title: "Oncolytic Viruses: The Next Generation of Cancer Fighters"
 date: 2025-08-09
-description: "When most people hear the word “virus,” they think of disease; COVID-19, the flu, or the common cold. But in the cutting-edge world of cancer research, some viruses are being reimagined as healers rather than harmers. Welcome to the era of oncolytic viruses, where scientists are turning nature’s tiniest invaders into cancer’s deadliest enemies. What […]"
+description: "When most people hear the word “virus,” they think of disease; COVID-19, the flu, or the common cold. But in the cutting-edge world of cancer research, some viruses are being reimagined as healers rather than harmers."
 tags:
-  - "cancer"
-  - "Diya Borundiya"
-  - "immune system"
-  - "Oncolytic"
-  - "Virus"
+  - "Cancer"
+  - "Immunology"
+  - "Virology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/08/08/oncolytic-viruses-the-next-generation-of-cancer-fighters/"
 ---
 

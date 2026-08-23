@@ -1,16 +1,10 @@
 ---
 title: "Cancer Vaccines: Can We Train the Immune System to Fight Cancer?"
 date: 2025-06-21
-description: "Most people think of vaccines as tools to prevent infections like measles or the flu. But a new kind of vaccine is emerging—one that doesn’t stop a virus, but helps the immune system find and destroy cancer. These are known as cancer vaccines, and while the field is still developing, early results are promising. Some […]"
+description: "Most people think of vaccines as tools to prevent infections like measles or the flu. But a new kind of vaccine is emerging—one that doesn’t stop a virus, but helps the immune system find and destroy cancer."
 tags:
-  - "antigens"
-  - "cancer"
-  - "cancer vaccines"
-  - "Diya Borundiya"
-  - "immune system"
-  - "immunology"
-  - "therapeutic cancer vaccines"
-  - "vaccines"
+  - "Cancer"
+  - "Immunology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/21/cancer-vaccines-can-we-train-the-immune-system-to-fight-cancer/"
 ---
 

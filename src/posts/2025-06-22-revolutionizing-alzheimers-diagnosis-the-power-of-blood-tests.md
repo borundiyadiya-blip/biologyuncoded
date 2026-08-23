@@ -1,16 +1,11 @@
 ---
 title: "Revolutionizing Alzheimer’s Diagnosis: The Power of Blood Tests"
 date: 2025-06-22
-description: "Alzheimer’s disease has long been diagnosed using brain scans or spinal taps—procedures that are expensive, invasive, and often inaccessible. But this is changing fast. Recent breakthroughs in blood-based diagnostics are transforming how we detect Alzheimer’s—offering earlier detection, more affordable options, and better potential for treatment. Let’s explore the latest progress and what it means for […]"
+description: "Alzheimer’s disease has long been diagnosed using brain scans or spinal taps—procedures that are expensive, invasive, and often inaccessible. But this is changing fast."
 tags:
-  - "aging"
-  - "alzheimer"
-  - "alzheimer's"
-  - "alzheimer's diagnosis"
-  - "blood tests"
-  - "dementia"
-  - "Diya Borundiya"
-  - "liquid biopsies"
+  - "Aging"
+  - "Alzheimer's"
+  - "Diagnostics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/22/revolutionizing-alzheimers-diagnosis-the-power-of-blood-tests/"
 ---
 

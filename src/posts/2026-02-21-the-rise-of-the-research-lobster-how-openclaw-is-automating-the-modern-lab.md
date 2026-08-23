@@ -1,7 +1,7 @@
 ---
 title: "The Rise of the Research Lobster: How OpenClaw is Automating the Modern Lab"
 date: 2026-02-21
-description: "In early 2026, the biotech world is buzzing about more than just CRISPR or GLP-1s. The real \"lobster\" in the room is OpenClaw. If you’ve been following the GitHub charts or the sudden rise of \"Crustafarian\" AI subcultures, you know that OpenClaw (formerly Clawdbot/Moltbot) has shifted the conversation from \"What can AI tell me?\" to […]"
+description: "In early 2026, the biotech world is buzzing about more than just CRISPR or GLP-1s. The real “lobster” in the room is OpenClaw."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/02/21/the-rise-of-the-research-lobster-how-openclaw-is-automating-the-modern-lab/"
 ---
 

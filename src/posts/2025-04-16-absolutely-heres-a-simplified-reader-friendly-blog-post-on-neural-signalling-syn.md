@@ -1,14 +1,10 @@
 ---
 title: "Neural Signalling & Synaptic Plasticity: How Your Brain Talks and Learns"
 date: 2025-04-16
-description: "Your brain is talking to itself—constantly. Every thought you have, every movement you make, and every memory you recall happens because your brain cells (called neurons) are sending messages to each other. But how exactly does this communication work? And how does your brain get better at certain things over time, like learning a new […]"
+description: "Your brain is talking to itself—constantly. Every thought you have, every movement you make, and every memory you recall happens because your brain cells (called neurons) are sending messages to each other."
 tags:
-  - "brain"
-  - "Diya Borundiya"
-  - "health"
-  - "mental-health"
-  - "neuroplasticity"
-  - "neuroscience"
+  - "Mental health"
+  - "Neuroscience"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/15/absolutely-heres-a-simplified-reader-friendly-blog-post-on-neural-signalling-synaptic-plasticity-written-to-make-complex-concepts-easy-to-understand/"
 ---
 

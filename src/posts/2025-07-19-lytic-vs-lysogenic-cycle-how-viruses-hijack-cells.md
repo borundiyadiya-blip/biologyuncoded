@@ -1,13 +1,9 @@
 ---
 title: "Lytic vs. Lysogenic Cycle: How Viruses Hijack Cells"
 date: 2025-07-19
-description: "If you’ve ever heard someone say a virus “hijacks” your body’s cells, they’re not wrong. But there’s more than one way a virus can take over. In fact, viruses—especially bacteriophages—typically follow one of two life strategies when infecting a cell: the lytic cycle or the lysogenic cycle. Let’s break down the difference. 🦠 What Is […]"
+description: "If you’ve ever heard someone say a virus “hijacks” your body’s cells, they’re not wrong. But there’s more than one way a virus can take over."
 tags:
-  - "Bacteria"
-  - "Diya Borundiya"
-  - "Lysogenic"
-  - "Lytic"
-  - "Virus"
+  - "Virology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/19/lytic-vs-lysogenic-cycle-how-viruses-hijack-cells/"
 ---
 

@@ -1,13 +1,10 @@
 ---
 title: "Could This Be the End of Cancer? University of Florida Unveils Revolutionary mRNA Vaccine"
 date: 2025-07-18
-description: "Scientists at the University of Florida (UF) report a striking breakthrough in cancer research—an mRNA vaccine that, surprisingly, doesn't target any specific tumour protein yet still triggers a powerful anti-cancer immune response in mice. When combined with existing immune checkpoint inhibitors, it could pave the way for a universal cancer vaccine (www.ndtv.com). 🧠 A New […]"
+description: "Scientists at the University of Florida (UF) report a striking breakthrough in cancer research—an mRNA vaccine that, surprisingly, doesn’t target any specific tumour protein yet still…"
 tags:
-  - "cancer"
-  - "cancer cure"
-  - "Diya Borundiya"
-  - "mRNA"
-  - "vaccine"
+  - "Cancer"
+  - "Immunology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/18/could-this-be-the-end-of-cancer-university-of-florida-unveils-revolutionary-mrna-vaccine/"
 ---
 

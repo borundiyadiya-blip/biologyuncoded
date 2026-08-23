@@ -1,15 +1,10 @@
 ---
 title: "A programmable dual RNA-guided DNA endonuclease in adaptive bacterial immunity: Dissecting the 2012 Jinek et al. Paper"
 date: 2025-07-19
-description: "Introduction: A Molecular Revolution Begins In 2012, a paper published in Science by Martin Jinek, Krzysztof Chylinski, Ines Fonfara, Michael Hauer, Jennifer Doudna, and Emmanuelle Charpentier shifted the trajectory of modern biology. Titled \"A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity,\" this paper laid the foundation for what we now recognize as CRISPR-Cas9 genome […]"
+description: "Introduction: A Molecular Revolution Begins In 2012, a paper published in Science by Martin Jinek, Krzysztof Chylinski, Ines Fonfara, Michael Hauer, Jennifer Doudna, and Emmanuelle…"
 tags:
-  - "Bacteria"
-  - "cas9"
-  - "crispr"
-  - "crRNA"
-  - "Diya Borundiya"
-  - "tracrRNA"
-  - "Virus"
+  - "Gene editing"
+  - "Virology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/19/the-birth-of-crispr-cas9-dissecting-the-groundbreaking-2012-jinek-et-al-paper/"
 ---
 

@@ -1,14 +1,10 @@
 ---
 title: "AI Companions and the Psychology of Loneliness: A Digital Cure or a Deeper Disconnect?"
 date: 2025-04-12
-description: "We live in the most connected era in human history. We can text, call, or video chat with anyone, anywhere, at any time. Yet, despite these endless digital threads, loneliness is on the rise—especially among young adults, the elderly, and those living in urban environments. Enter a new kind of relationship: AI companions. These aren’t […]"
+description: "We live in the most connected era in human history. We can text, call, or video chat with anyone, anywhere, at any time."
 tags:
-  - "ai"
-  - "artificial-intelligence"
-  - "Diya Borundiya"
-  - "life"
-  - "mental-health"
-  - "technology"
+  - "AI"
+  - "Mental health"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/12/ai-companions-and-the-psychology-of-loneliness-a-digital-cure-or-a-deeper-disconnect/"
 ---
 

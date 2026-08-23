@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Gym: An Introductory Guide to Medical Fat Reduction and Weight Management"
 date: 2026-06-11
-description: "When it comes to managing body fat, the traditional advice has always been \"diet and exercise.\" While lifestyle changes are the foundation of health, medical science has advanced significantly, offering various clinical options for people who need extra support for health reasons or specific cosmetic goals. Medical interventions generally fall into three distinct buckets: prescription […]"
+description: "When it comes to managing body fat, the traditional advice has always been “diet and exercise.” While lifestyle changes are the foundation of health, medical science has advanced…"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/11/beyond-the-gym-an-introductory-guide-to-medical-fat-reduction-and-weight-management/"
 ---
 

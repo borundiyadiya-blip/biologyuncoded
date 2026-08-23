@@ -1,7 +1,7 @@
 ---
 title: "The Kitchen Window Cure? How a Common Houseplant Is Taking Aim at Alzheimer’s"
 date: 2026-03-01
-description: "Beyond its reputation as the \"sunburn plant\" and a staple of bathroom décor, Aloe vera has been hiding a secret in its thick, succulent leaves. While we’ve been using it for centuries to soothe skin, researchers have now identified a specific compound within the plant that could be a heavy hitter in the fight against […]"
+description: "Beyond its reputation as the “sunburn plant” and a staple of bathroom décor, Aloe vera has been hiding a secret in its thick, succulent leaves."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/03/01/the-kitchen-window-cure-how-a-common-houseplant-is-taking-aim-at-alzheimers/"
 ---
 

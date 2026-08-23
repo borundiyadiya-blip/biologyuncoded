@@ -12,21 +12,30 @@
    ========================================================================= */
 
 :root {
-  --paper:    #fcfcfd;
-  --paper-2:  #f1f4f7;
-  --ink:      #111519;
-  --ink-2:    #39424c;
-  --grey:     #6f7a86;
-  --rule:     #dee3e9;
+  --paper:    #fcfbf9;
+  --paper-2:  #f3f0ea;
+  --ink:      #14181c;
+  --ink-2:    #3d464f;
+  /* Was #6f7a86, which is 4.26:1 on paper — below the 4.5:1 minimum, and it
+     carries every date, byline and count on the site at ~13px. */
+  --grey:     #5f6a76;
+  --rule:     #e4ded4;
+  /* Borders that outline an interactive chip need 3:1, which --rule can't
+     give without making every decorative hairline heavy. */
+  --rule-str: #9a9186;
   --down:     #1a6ca6;
   --down-2:   #12527f;
   --up:       #a2221a;
+  --tint:     rgba(26, 108, 166, 0.06);
 
   --measure: 68ch;
   --gutter: clamp(1.15rem, 5vw, 2.5rem);
 
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  --sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  /* No webfont: this carries only secondary chrome (the tagline, captions,
+     footnotes, table text), and a whole extra family download was not worth
+     it when the system stack renders it indistinguishably at these sizes. */
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
 
   --step--1: clamp(0.78rem, 0.76rem + 0.1vw, 0.83rem);
@@ -43,11 +52,13 @@
     --paper-2: #161c22;
     --ink:     #e7ebef;
     --ink-2:   #a9b4bf;
-    --grey:    #7b8794;
+    --grey:    #8d98a4;
     --rule:    #252d35;
+    --rule-str: #4a5563;
     --down:    #66b4e8;
     --down-2:  #8fcbf3;
     --up:      #e8796d;
+    --tint:    rgba(102, 180, 232, 0.09);
   }
 }
 
@@ -213,18 +224,40 @@ a:hover { color: var(--down-2); }
   text-decoration: none;
   color: var(--paper);
   background: var(--ink);
-  padding: 0.52rem 0.95rem;
-  transition: background 0.15s ease;
+  padding: 0.6rem 1.1rem;
+  border-radius: 3px;
+  letter-spacing: 0.01em;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 .readon:hover { background: var(--down); color: #fff; }
+.readon:active { transform: translateY(1px); }
 
 /* --- post lists ---------------------------------------------------------- */
 .postlist { list-style: none; margin: 0; padding: 0; }
 .postlist-item {
-  padding-block: 1.5rem;
+  position: relative;
+  padding-block: 1.65rem;
   border-top: 1px solid var(--rule);
 }
 .postlist-item:first-child { border-top: 0; padding-top: 0; }
+
+/* A hairline in the gutter that lights up on hover: it marks which entry the
+   pointer is on without washing the whole row in colour, which at this text
+   size reads as noise rather than emphasis. */
+.postlist-item::before {
+  content: "";
+  position: absolute;
+  left: -0.85rem;
+  top: 1.65rem;
+  bottom: 1.65rem;
+  width: 2px;
+  background: var(--down);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+.postlist-item:first-child::before { top: 0; }
+.postlist-item:hover::before,
+.postlist-item:focus-within::before { opacity: 1; }
 .postlist-title {
   font-family: var(--mono);
   font-weight: 500;
@@ -304,10 +337,12 @@ a:hover { color: var(--down-2); }
   font-size: clamp(0.8rem, calc(0.72rem + (var(--w) * 0.055rem)), 1.32rem);
   text-decoration: none;
   color: var(--ink);
-  border: 1px solid var(--rule);
+  border: 1px solid var(--rule-str);
+  border-radius: 3px;
   padding: 0.32rem 0.6rem;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
-.cloud-tag:hover { border-color: var(--down); color: var(--down); }
+.cloud-tag:hover { border-color: var(--down); background: var(--tint); color: var(--down); }
 .cloud-count { font-size: 0.72em; color: var(--grey); }
 
 .taglist { list-style: none; display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0; padding: 0; }
@@ -316,10 +351,12 @@ a:hover { color: var(--down-2); }
   font-size: var(--step--1);
   text-decoration: none;
   color: var(--ink-2);
-  border: 1px solid var(--rule);
+  border: 1px solid var(--rule-str);
+  border-radius: 3px;
   padding: 0.24rem 0.5rem;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
-.tag:hover { border-color: var(--down); color: var(--down); }
+.tag:hover { border-color: var(--down); background: var(--tint); color: var(--down); }
 
 /* --- reading progress: a coverage track ---------------------------------- */
 .coverage {
@@ -361,7 +398,7 @@ a:hover { color: var(--down-2); }
 }
 
 .prose > :first-child { margin-top: 0; }
-.prose p { margin: 0 0 1.25em; }
+.prose p { margin: 0 0 1.25em; text-wrap: pretty; }
 
 .prose h2, .prose h3, .prose h4 {
   font-family: var(--mono);
@@ -372,7 +409,20 @@ a:hover { color: var(--down-2); }
 .prose h2 { font-size: var(--step-2); font-weight: 600; }
 .prose h3 { font-size: var(--step-1); font-weight: 500; }
 .prose h4 { font-size: var(--step-0); font-weight: 600; }
-.prose h2 a, .prose h3 a { color: inherit; text-decoration: none; }
+/* The permalink glyph markdown-it-anchor appends. Kept out of the way until
+   the heading is hovered or the link itself is focused, so it never competes
+   with the heading text. */
+.header-anchor {
+  color: var(--grey);
+  text-decoration: none;
+  margin-left: 0.35em;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.prose h2:hover .header-anchor,
+.prose h3:hover .header-anchor,
+.header-anchor:focus-visible { opacity: 1; }
+.header-anchor:hover { color: var(--down); }
 
 .prose ul, .prose ol { margin: 0 0 1.25em; padding-left: 1.4em; }
 .prose li { margin-bottom: 0.4em; }

@@ -1,7 +1,7 @@
 ---
 title: "Taking Science to the Problem: How DNAiTECH is Revolutionizing Point-of-Care Diagnostics"
 date: 2026-06-30
-description: "Imagine a deadly pathogen breaks out in a remote rural clinic, or a mysterious disease begins wiping out crops on a vineyard. Historically, the protocol has always been the same: collect a sample, pack it up, ship it off to a centralized laboratory, and wait. And wait. By the time the lab results come back […]"
+description: "Imagine a deadly pathogen breaks out in a remote rural clinic, or a mysterious disease begins wiping out crops on a vineyard."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/30/taking-science-to-the-problem-how-dnaitech-is-revolutionizing-point-of-care-diagnostics/"
 ---
 

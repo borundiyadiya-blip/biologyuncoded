@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Blueprint: How Your Cells Remix the Genetic Code"
 date: 2026-07-07
-description: "Have you ever wondered how a single cell—a fertilized egg—replicates itself into the trillions of cells that make up you? Even wilder: how do your skin cells, your brain cells, and your heart cells all contain the exact same DNA manual, yet look and act completely differently? It turns out your cells aren't just blindly […]"
+description: "Have you ever wondered how a single cell—a fertilized egg—replicates itself into the trillions of cells that make up you?"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/07/beyond-the-blueprint-how-your-cells-remix-the-genetic-code/"
 ---
 

@@ -19,13 +19,20 @@ permalink: "{% if pagination.pageNumber == 0 %}/index.html{% else %}/page/{{ pag
 {% endif %}
 
 <section class="wrap">
-  {% if pagination.pageNumber == 0 %}<h2 class="section-label">More posts</h2>{% endif %}
+  {% if pagination.pageNumber == 0 %}
+  <h2 class="section-label">More posts</h2>
+  {% else %}
+  {# Pages 2+ have no lead article, so without this they would ship no h1 at
+     all — the document would start at h2. #}
+  <h1 class="page-title">Posts</h1>
+  <p class="page-sub">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</p>
+  {% endif %}
   <ol class="postlist" reversed>
     {% for p in pagePosts %}
       {% if not (pagination.pageNumber == 0 and loop.index0 == 0) %}
       <li class="postlist-item">
         <p class="eyebrow"><time datetime="{{ p.date | isoDate }}">{{ p.date | shortDate }}</time></p>
-        <h3 class="postlist-title"><a href="{{ p.url }}">{{ p.data.title }}</a></h3>
+        <h2 class="postlist-title"><a href="{{ p.url }}">{{ p.data.title }}</a></h2>
         <p class="postlist-excerpt">{{ p.data.description or (p.templateContent | excerpt(190)) }}</p>
       </li>
       {% endif %}

@@ -1,13 +1,10 @@
 ---
 title: "Understanding Cancer: How It Starts and the Latest Advances in Treatment"
 date: 2025-03-22
-description: "Cancer is a word that carries immense weight. It’s a disease that affects millions worldwide, yet many people don’t fully understand how it develops, or the incredible progress being made in treatment. At its core, cancer is a disease of uncontrolled cell growth. Unlike normal cells, which grow, divide, and die in a regulated way, […]"
+description: "Cancer is a word that carries immense weight. It’s a disease that affects millions worldwide, yet many people don’t fully understand how it develops, or the incredible progress being made in treatment."
 tags:
-  - "biology"
-  - "cancer"
-  - "health"
-  - "immunotherapy"
-  - "medicine"
+  - "Cancer"
+  - "Immunology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/03/22/understanding-cancer-how-it-starts-and-the-latest-advances-in-treatment/"
 ---
 

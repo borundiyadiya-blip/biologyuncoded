@@ -1,16 +1,10 @@
 ---
 title: "Base Editing vs. Prime Editing: What’s the Difference—and Why Does It Matter?"
 date: 2025-07-16
-description: "When CRISPR-Cas9 was first introduced to the world, it was hailed as a revolution in gene editing—a molecular tool that could cut and modify DNA with high precision. But while CRISPR is incredibly powerful, it’s not perfect. Making clean, safe, and predictable edits—especially in human cells—requires even more refined tools. Enter the next generation of […]"
+description: "When CRISPR-Cas9 was first introduced to the world, it was hailed as a revolution in gene editing—a molecular tool that could cut and modify DNA with high precision. But while CRISPR is incredibly powerful, it’s not perfect."
 tags:
-  - "base editing"
-  - "cas9"
-  - "crispr"
-  - "crispr cas9"
-  - "Diya Borundiya"
-  - "gene editing"
-  - "genes"
-  - "prime editing"
+  - "Gene editing"
+  - "Genetics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/16/base-editing-vs-prime-editing-whats-the-difference-and-why-does-it-matter/"
 ---
 

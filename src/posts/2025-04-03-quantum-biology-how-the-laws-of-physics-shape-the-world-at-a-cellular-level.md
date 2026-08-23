@@ -1,17 +1,12 @@
 ---
 title: "Quantum Biology: How the laws of physics shape the world at a cellular level"
 date: 2025-04-03
-description: "Quantum biology is an emerging field that explores how quantum mechanics—the fundamental principles governing the behaviour of matter and energy at the smallest scales—plays a role in biological processes. Traditionally, biology has been understood through classical physics, but recent research suggests that quantum phenomena such as coherence, tunnelling, and entanglement may significantly influence various cellular […]"
+description: "Quantum biology is an emerging field that explores how quantum mechanics—the fundamental principles governing the behaviour of matter and energy at the smallest scales—plays a role in biological processes."
 tags:
-  - "ai"
-  - "cells"
-  - "consciousness"
-  - "Diya Borundiya"
-  - "philosophy"
-  - "physics"
-  - "quantum"
-  - "quantum-biology"
-  - "science"
+  - "AI"
+  - "Cells and tissue"
+  - "Genetics"
+  - "Neuroscience"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/03/quantum-biology-how-the-laws-of-physics-shape-the-world-at-a-cellular-level/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Unlocking the Genome: From \"Junk DNA\" to the Master Switches of Life"
 date: 2026-07-19
-description: "If you took high school biology a decade or two ago, you were probably taught a very straightforward story: DNA is the molecule of life, genes are the sequences that code for proteins, and anything outside those genes is just evolutionary clutter—often dismissed as \"junk DNA.\" Fast forward to today, and genomics has completely flipped […]"
+description: "If you took high school biology a decade or two ago, you were probably taught a very straightforward story: DNA is the molecule of life, genes are the sequences that code for proteins…"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/19/unlocking-the-genome-from-junk-dna-to-the-master-switches-of-life/"
 ---
 

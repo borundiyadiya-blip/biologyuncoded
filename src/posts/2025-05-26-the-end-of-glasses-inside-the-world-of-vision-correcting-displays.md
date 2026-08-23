@@ -1,13 +1,9 @@
 ---
 title: "The End of Glasses? Inside the World of Vision-Correcting Displays"
 date: 2025-05-26
-description: "Imagine waking up, looking at your phone, and seeing the world in perfect clarity—without wearing glasses or contacts. No more foggy lenses in the rain. No more misplacing your specs. No more laser surgery appointments. Sound too good to be true? Thanks to the rise of vision-correcting displays, it may soon be our reality. 👁 […]"
+description: "Imagine waking up, looking at your phone, and seeing the world in perfect clarity—without wearing glasses or contacts. No more foggy lenses in the rain. No more misplacing your specs. No more laser surgery appointments."
 tags:
-  - "contacts"
-  - "Diya Borundiya"
-  - "glasses"
-  - "vision"
-  - "vision correcting displays"
+  - "Vision"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/05/26/the-end-of-glasses-inside-the-world-of-vision-correcting-displays/"
 ---
 

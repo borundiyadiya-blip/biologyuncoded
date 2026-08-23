@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Blast: Why the Future of Cancer Therapy is About Reprogramming, Not Destroying"
 date: 2026-06-14
-description: "For decades, the war on cancer has been fought with a scorched-earth strategy. If you or a loved one have ever undergone traditional cancer treatments like chemotherapy or radiation, you know the routine: flood the body with powerful agents designed to kill fast-growing cells, and pray the cancer dies before the healthy tissue does. It’s […]"
+description: "For decades, the war on cancer has been fought with a scorched-earth strategy. If you or a loved one have ever undergone traditional cancer treatments like chemotherapy or radiation…"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/14/beyond-the-blast-why-the-future-of-cancer-therapy-is-about-reprogramming-not-destroying/"
 ---
 

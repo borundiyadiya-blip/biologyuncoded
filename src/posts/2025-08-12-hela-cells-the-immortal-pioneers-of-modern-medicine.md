@@ -1,12 +1,9 @@
 ---
 title: "HeLa Cells: The Immortal Pioneers of Modern Medicine"
 date: 2025-08-12
-description: "In 1951, a 31-year-old African American woman named Henrietta Lacks went to Johns Hopkins Hospital seeking treatment for an aggressive form of cervical cancer. Without her knowledge or consent, doctors took a small sample of her tumor cells and made a discovery that would forever change science: her cells didn’t die. Most human cells stop […]"
+description: "In 1951, a 31-year-old African American woman named Henrietta Lacks went to Johns Hopkins Hospital seeking treatment for an aggressive form of cervical cancer."
 tags:
-  - "cells"
-  - "Diya Borundiya"
-  - "HeLa"
-  - "immortal"
+  - "Cells and tissue"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/08/11/hela-cells-the-immortal-pioneers-of-modern-medicine/"
 ---
 

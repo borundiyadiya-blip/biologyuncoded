@@ -1,15 +1,10 @@
 ---
 title: "CRISPR Technology: The Gene-Editing Breakthrough Shaping Our Future"
 date: 2025-03-22
-description: "Imagine a world where genetic diseases like sickle cell anaemia and cystic fibrosis could be erased before birth. Or where crops could be engineered to resist pests without the need for harmful pesticides. This isn’t science fiction; it’s the promise of CRISPR, a revolutionary gene-editing tool that is reshaping medicine, agriculture, and beyond. But with […]"
+description: "Imagine a world where genetic diseases like sickle cell anaemia and cystic fibrosis could be erased before birth. Or where crops could be engineered to resist pests without the need for harmful pesticides."
 tags:
-  - "crispr"
-  - "diseases"
-  - "Diya Borundiya"
-  - "dna"
-  - "gene editing"
-  - "genetics"
-  - "genome"
+  - "Gene editing"
+  - "Genetics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/03/21/crispr-technology-the-gene-editing-breakthrough-shaping-our-future/"
 ---
 

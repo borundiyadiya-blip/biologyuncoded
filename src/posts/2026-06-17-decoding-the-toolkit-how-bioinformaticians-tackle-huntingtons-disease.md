@@ -1,7 +1,7 @@
 ---
 title: "Decoding the Toolkit: How Bioinformaticians Tackle Huntington’s Disease"
 date: 2026-06-17
-description: "In the era of modern biotechnology, the fight against complex genetic disorders like Huntington’s disease is fought as much behind a computer screen as it is at the laboratory bench. To understand the genetic underpinnings of Huntington’s—a neurodegenerative condition caused by a specific repeat expansion in the HTT gene—researchers must process vast amounts of biological […]"
+description: "In the era of modern biotechnology, the fight against complex genetic disorders like Huntington’s disease is fought as much behind a computer screen as it is at the laboratory bench."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/17/decoding-the-toolkit-how-bioinformaticians-tackle-huntingtons-disease/"
 ---
 

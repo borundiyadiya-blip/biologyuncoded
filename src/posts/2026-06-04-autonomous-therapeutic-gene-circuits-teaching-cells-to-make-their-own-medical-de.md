@@ -1,7 +1,7 @@
 ---
 title: "Autonomous Therapeutic Gene Circuits: Teaching Cells to Make Their Own Medical Decisions"
 date: 2026-06-04
-description: "Modern medicine is remarkably powerful, but most treatments still operate with a surprisingly simple logic: a drug is administered, and it affects the body whether it is needed at that moment or not. Researchers are now working toward a different paradigm—one in which living cells can continuously monitor their environment, process biological information, and decide […]"
+description: "Modern medicine is remarkably powerful, but most treatments still operate with a surprisingly simple logic: a drug is administered, and it affects the body whether it is needed at that moment or not."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/04/autonomous-therapeutic-gene-circuits-teaching-cells-to-make-their-own-medical-decisions/"
 ---
 

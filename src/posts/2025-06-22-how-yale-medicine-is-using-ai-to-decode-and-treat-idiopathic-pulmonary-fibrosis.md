@@ -1,15 +1,9 @@
 ---
 title: "How Yale Medicine Is Using AI to Decode and Treat Idiopathic Pulmonary Fibrosis"
 date: 2025-06-22
-description: "Idiopathic pulmonary fibrosis (IPF) is a mysterious lung disease—“idiopathic” meaning the cause is unknown. It progressively scars the lungs, restricting oxygen flow and making breathing increasingly difficult. With limited treatments and a median survival of just 3–5 years after diagnosis, new approaches are urgently needed. That’s where Yale Medicine steps in—with AI, single-cell analysis, and […]"
+description: "Idiopathic pulmonary fibrosis (IPF) is a mysterious lung disease—“idiopathic” meaning the cause is unknown. It progressively scars the lungs, restricting oxygen flow and making breathing increasingly difficult."
 tags:
-  - "ai"
-  - "Diya Borundiya"
-  - "idiopathic pulmonary fibrosis"
-  - "IPF"
-  - "PF Connectome"
-  - "yale"
-  - "yale medicine"
+  - "AI"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/22/how-yale-medicine-is-using-ai-to-decode-and-treat-idiopathic-pulmonary-fibrosis/"
 ---
 

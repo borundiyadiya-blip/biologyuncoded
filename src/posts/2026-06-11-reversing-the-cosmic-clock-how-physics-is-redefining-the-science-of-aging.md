@@ -1,7 +1,7 @@
 ---
 title: "Reversing the Cosmic Clock: How Physics is Redefining the Science of Aging"
 date: 2026-06-11
-description: "We’ve all accepted aging as an inevitable part of life. We get wrinkles, our joints start to creak, and eventually, our bodies become vulnerable to diseases like cancer, diabetes, and Alzheimer’s. For centuries, modern medicine has treated these conditions like a game of whack-a-mole—waiting for a disease to pop up, treating it, and then waiting […]"
+description: "We’ve all accepted aging as an inevitable part of life. We get wrinkles, our joints start to creak, and eventually, our bodies become vulnerable to diseases like cancer, diabetes, and Alzheimer’s."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/11/reversing-the-cosmic-clock-how-physics-is-redefining-the-science-of-aging/"
 ---
 

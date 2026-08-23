@@ -1,14 +1,10 @@
 ---
 title: "Liquid Biopsies: A Blood Test That Detects Cancer Early"
 date: 2025-04-27
-description: "When it comes to cancer, early detection can make all the difference. The earlier a tumour is caught, the better the chances of successful treatment. Traditionally, detecting cancer early has relied on imaging scans, invasive tissue biopsies, or noticing symptoms—which often appear after cancer has started to spread. But what if finding cancer early could […]"
+description: "When it comes to cancer, early detection can make all the difference. The earlier a tumour is caught, the better the chances of successful treatment."
 tags:
-  - "blood test"
-  - "cancer"
-  - "cancer screening"
-  - "Diya Borundiya"
-  - "early detection"
-  - "liquid biopsies"
+  - "Cancer"
+  - "Diagnostics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/27/liquid-biopsies-a-blood-test-that-detects-cancer-early/"
 ---
 

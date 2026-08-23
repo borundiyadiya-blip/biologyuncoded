@@ -1,16 +1,10 @@
 ---
 title: "Creating Organs with Stem Cells: The Future of Transplants"
 date: 2025-06-26
-description: "Imagine a world where patients waiting for organ transplants no longer rely on donor lists. Instead, doctors could grow a new kidney, liver, or even a heart—tailored from a patient’s own cells. This once science-fiction vision is now becoming reality thanks to advances in stem cell biology and bioengineering. Researchers around the world are learning […]"
+description: "Imagine a world where patients waiting for organ transplants no longer rely on donor lists. Instead, doctors could grow a new kidney, liver, or even a heart—tailored from a patient’s own cells."
 tags:
-  - "bioengineering"
-  - "Diya Borundiya"
-  - "new kidney"
-  - "organ"
-  - "organ shortage"
-  - "organ transplants"
-  - "stem cells"
-  - "transplants"
+  - "Cells and tissue"
+  - "Synthetic biology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/25/creating-organs-with-stem-cells-the-future-of-transplants/"
 ---
 

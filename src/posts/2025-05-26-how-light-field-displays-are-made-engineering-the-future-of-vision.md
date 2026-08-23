@@ -1,12 +1,9 @@
 ---
 title: "How Light Field Displays Are Made: Engineering the Future of Vision"
 date: 2025-05-26
-description: "Have you ever wondered what it would take to build a screen that projects light in 3D, lets you view objects from different angles without glasses, or even corrects your vision without contact lenses? Welcome to the world of light field displays—one of the most complex and fascinating frontiers in optics, computer science, and human-centred […]"
+description: "Have you ever wondered what it would take to build a screen that projects light in 3D, lets you view objects from different angles without glasses, or even corrects your vision without contact lenses?"
 tags:
-  - "Diya Borundiya"
-  - "lens free screens"
-  - "light field displays"
-  - "vision correcting"
+  - "Vision"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/05/26/how-light-field-displays-are-made-engineering-the-future-of-vision/"
 ---
 

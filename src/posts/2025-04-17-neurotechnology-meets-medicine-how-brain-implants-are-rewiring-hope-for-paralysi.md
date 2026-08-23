@@ -1,19 +1,11 @@
 ---
 title: "Neurotechnology Meets Medicine: How Brain Implants Are Rewiring Hope for Paralysis and Depression"
 date: 2025-04-17
-description: "Imagine controlling a computer just by thinking. Or walking again after years of paralysis. Or even lifting the fog of severe depression with the help of a tiny chip implanted in your brain. Sounds like science fiction, right? But it’s not. Thanks to rapid advances in neurotechnology, brain implants are no longer futuristic fantasies—they’re real […]"
+description: "Imagine controlling a computer just by thinking. Or walking again after years of paralysis. Or even lifting the fog of severe depression with the help of a tiny chip implanted in your brain."
 tags:
-  - "ai"
-  - "brain"
-  - "brain implants"
-  - "depression"
-  - "Diya Borundiya"
-  - "health"
-  - "neuroscience"
-  - "neurotechnology"
-  - "paralysis"
-  - "science"
-  - "technology"
+  - "AI"
+  - "Mental health"
+  - "Neuroscience"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/17/neurotechnology-meets-medicine-how-brain-implants-are-rewiring-hope-for-paralysis-and-depression/"
 ---
 

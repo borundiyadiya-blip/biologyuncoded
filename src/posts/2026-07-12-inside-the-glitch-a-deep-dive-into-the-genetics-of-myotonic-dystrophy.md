@@ -1,7 +1,7 @@
 ---
 title: "Inside the Glitch: A Deep Dive into the Genetics of Myotonic Dystrophy"
 date: 2026-07-12
-description: "Ever had your hand freeze up while trying to let go of a doorknob or a game controller? For most people, that’s just a weird cramp. But for individuals living with Myotonic Dystrophy (DM), it’s a daily reality known as myotonia—where muscles struggle to relax after they are used. While DM is fundamentally a neuromuscular […]"
+description: "Ever had your hand freeze up while trying to let go of a doorknob or a game controller? For most people, that’s just a weird cramp."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/11/inside-the-glitch-a-deep-dive-into-the-genetics-of-myotonic-dystrophy/"
 ---
 

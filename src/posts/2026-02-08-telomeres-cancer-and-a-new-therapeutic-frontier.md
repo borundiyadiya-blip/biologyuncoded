@@ -1,7 +1,7 @@
 ---
 title: "Telomeres, Cancer, and a New Therapeutic Frontier"
 date: 2026-02-08
-description: "Cancer cells bypass normal limits on replication by hijacking the enzyme telomerase to sustain their telomeres — protective caps at the ends of chromosomes that normally shorten with age. This telomerase activity is a hallmark of 80 %+ of cancers and helps tumors evade cell death. (MAIA Biotechnology, Inc.) Maia Biotechnology has built its strategy […]"
+description: "Cancer cells bypass normal limits on replication by hijacking the enzyme telomerase to sustain their telomeres — protective caps at the ends of chromosomes that normally shorten with age."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/02/07/telomeres-cancer-and-a-new-therapeutic-frontier/"
 ---
 

@@ -1,11 +1,10 @@
 ---
 title: "Organoid-on-a-Chip: Miniature Human Tissues for Drug Testing"
 date: 2025-06-13
-description: "Imagine being able to test new medicines on a miniature version of your liver—or even a tiny replica of your brain—without ever stepping into a hospital. This isn’t science fiction. It’s a fast-growing field known as Organoid-on-a-Chip technology. By combining biology and engineering, scientists are building tiny, living models of human organs that fit on […]"
+description: "Imagine being able to test new medicines on a miniature version of your liver—or even a tiny replica of your brain—without ever stepping into a hospital. This isn’t science fiction."
 tags:
-  - "digital human twins"
-  - "Diya Borundiya"
-  - "personalised therapy"
+  - "Digital twins"
+  - "Precision medicine"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/13/organoid-on-a-chip-miniature-human-tissues-for-drug-testing/"
 ---
 

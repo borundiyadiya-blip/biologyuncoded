@@ -1,14 +1,9 @@
 ---
 title: "Synthetic Biology: Designing Life Forms That Never Existed Before"
 date: 2025-04-27
-description: "Biology has always been about studying life—but what if we could design life from scratch? Thanks to the rise of synthetic biology, that’s exactly what scientists are starting to do. Instead of just observing nature, researchers are now building new organisms, customising biological systems, and even inventing life forms that have never existed before. It’s […]"
+description: "Biology has always been about studying life—but what if we could design life from scratch? Thanks to the rise of synthetic biology, that’s exactly what scientists are starting to do."
 tags:
-  - "bioengineering"
-  - "Diya Borundiya"
-  - "engineering"
-  - "life forms"
-  - "medicine"
-  - "synthetic biology"
+  - "Synthetic biology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/27/synthetic-biology-designing-life-forms-that-never-existed-before/"
 ---
 

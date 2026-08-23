@@ -1,16 +1,10 @@
 ---
 title: "Can Gene Therapy Cure Inherited Blindness?"
 date: 2025-06-19
-description: "For many people born with inherited forms of blindness, there has never been a cure—just the slow progression of vision loss and the hope that science might one day catch up. That day is getting closer. Thanks to major advances in gene therapy, we’re now seeing the first real treatments that can restore vision in […]"
+description: "For many people born with inherited forms of blindness, there has never been a cure—just the slow progression of vision loss and the hope that science might one day catch up. That day is getting closer."
 tags:
-  - "blindness"
-  - "blindness cure"
-  - "Diya Borundiya"
-  - "gene therapy"
-  - "inherited blindness"
-  - "restoring vision"
-  - "vision"
-  - "vision loss"
+  - "Gene editing"
+  - "Vision"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/19/can-gene-therapy-cure-inherited-blindness/"
 ---
 

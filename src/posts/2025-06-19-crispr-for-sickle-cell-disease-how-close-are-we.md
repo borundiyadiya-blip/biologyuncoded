@@ -1,14 +1,10 @@
 ---
 title: "CRISPR for Sickle Cell Disease: How Close Are We?"
 date: 2025-06-19
-description: "For decades, sickle cell disease has been a painful, life-shortening condition with limited treatment options. But that’s starting to change—thanks to a revolutionary gene-editing technology called CRISPR. In recent years, scientists have made major strides in using CRISPR to treat sickle cell disease at its genetic root. In fact, in 2023, the very first CRISPR-based […]"
+description: "For decades, sickle cell disease has been a painful, life-shortening condition with limited treatment options. But that’s starting to change—thanks to a revolutionary gene-editing technology called CRISPR."
 tags:
-  - "blood"
-  - "casgevy"
-  - "crispr"
-  - "Diya Borundiya"
-  - "gene editing"
-  - "sickle cell disease"
+  - "Diagnostics"
+  - "Gene editing"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/19/crispr-for-sickle-cell-disease-how-close-are-we/"
 ---
 

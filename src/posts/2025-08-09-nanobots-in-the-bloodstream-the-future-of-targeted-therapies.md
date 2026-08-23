@@ -1,13 +1,10 @@
 ---
 title: "Nanobots in the Bloodstream: The Future of Targeted Therapies"
 date: 2025-08-09
-description: "When you imagine the inside of your body, you might picture cells, blood vessels, and organs working in harmony. But in the near future, you might also imagine tiny, programmable machines, smaller than a grain of dust, swimming through your veins on life-saving missions. Welcome to the world of nanobots in medicine, where engineering meets […]"
+description: "When you imagine the inside of your body, you might picture cells, blood vessels, and organs working in harmony."
 tags:
-  - "Delivery systems"
-  - "Diya Borundiya"
-  - "immune system"
-  - "Nanobots"
-  - "Nanoparticles"
+  - "Drug delivery"
+  - "Immunology"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/08/08/nanobots-in-the-bloodstream-the-future-of-targeted-therapies/"
 ---
 

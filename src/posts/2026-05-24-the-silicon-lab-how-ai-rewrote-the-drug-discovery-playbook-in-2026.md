@@ -1,7 +1,7 @@
 ---
 title: "The Silicon Lab: How AI Rewrote the Drug Discovery Playbook in 2026"
 date: 2026-05-24
-description: "For decades, drug discovery was famously described as searching for a needle in a haystack—except the haystack was the size of a planet and the needle was invisible. In 2026, we no longer search the haystack. We use Artificial Intelligence to build the needle from scratch. This year marks a definitive turning point. The industry […]"
+description: "For decades, drug discovery was famously described as searching for a needle in a haystack—except the haystack was the size of a planet and the needle was invisible. In 2026, we no longer search the haystack."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/05/24/the-silicon-lab-how-ai-rewrote-the-drug-discovery-playbook-in-2026/"
 ---
 

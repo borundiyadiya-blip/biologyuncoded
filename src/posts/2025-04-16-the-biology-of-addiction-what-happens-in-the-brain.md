@@ -1,13 +1,9 @@
 ---
 title: "The Biology of Addiction: What Happens in the Brain?"
 date: 2025-04-16
-description: "Addiction is often misunderstood. To some, it looks like a failure of willpower. To others, it’s simply a bad habit. But neuroscience tells us something different—addiction is a complex brain disorder involving deeply rooted biological processes. Whether it's drugs, alcohol, gambling, or even social media, addiction changes the brain. It rewires how we experience reward, […]"
+description: "Addiction is often misunderstood. To some, it looks like a failure of willpower. To others, it’s simply a bad habit."
 tags:
-  - "addiction"
-  - "brain"
-  - "brain disease"
-  - "Diya Borundiya"
-  - "mentality"
+  - "Neuroscience"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/15/the-biology-of-addiction-what-happens-in-the-brain/"
 ---
 

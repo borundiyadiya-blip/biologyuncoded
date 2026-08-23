@@ -1,7 +1,7 @@
 ---
 title: "Vision-Correcting Displays: The Science Behind the Screen"
 date: 2025-05-26
-description: "In our last post, we explored the promise of vision-correcting displays—screens that adapt to your eyes, not the other way around. But how exactly do they work? And what challenges must we overcome before they’re everywhere? Let’s go deeper. 🔍 The Problem: The Eye is Not a Perfect Lens To understand vision-correcting displays, we first […]"
+description: "In our last post, we explored the promise of vision-correcting displays—screens that adapt to your eyes, not the other way around. But how exactly do they work? And what challenges must we overcome before they’re everywhere?"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/05/26/vision-correcting-displays-the-science-behind-the-screen/"
 ---
 

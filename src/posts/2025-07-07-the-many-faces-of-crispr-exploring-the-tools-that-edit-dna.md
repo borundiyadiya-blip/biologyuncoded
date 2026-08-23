@@ -1,13 +1,10 @@
 ---
 title: "The Many Faces of CRISPR: Exploring the Tools That Edit DNA"
 date: 2025-07-07
-description: "CRISPR has quickly become one of the most powerful tools in modern science. Best known as “genetic scissors,” it allows scientists to cut, edit, and rewrite DNA with remarkable precision. But what many people don’t realise is that CRISPR isn’t just one tool—it’s a whole toolbox. Over the past decade, researchers have discovered and engineered […]"
+description: "CRISPR has quickly become one of the most powerful tools in modern science. Best known as “genetic scissors,” it allows scientists to cut, edit, and rewrite DNA with remarkable precision."
 tags:
-  - "crispr"
-  - "crispr cas9"
-  - "dna"
-  - "gene editing"
-  - "genetics"
+  - "Gene editing"
+  - "Genetics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/07/the-many-faces-of-crispr-exploring-the-tools-that-edit-dna/"
 ---
 

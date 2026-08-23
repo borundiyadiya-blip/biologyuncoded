@@ -1,16 +1,12 @@
 ---
 title: "Precision Medicine: Healthcare Tailored to You"
 date: 2025-06-19
-description: "Imagine visiting your doctor and receiving a treatment plan designed specifically for you—based not just on your symptoms, but on your genes, lifestyle, and environment. That’s the promise of precision medicine: a growing field that aims to move away from one-size-fits-all medicine and toward personalised care. It’s already transforming how we treat cancer, manage chronic […]"
+description: "Imagine visiting your doctor and receiving a treatment plan designed specifically for you—based not just on your symptoms, but on your genes, lifestyle, and environment."
 tags:
-  - "ai"
-  - "biomarker testing"
-  - "Diya Borundiya"
-  - "genetic makeup"
-  - "genome sequencing"
-  - "healthcare"
-  - "precision healthcare"
-  - "precision medicine"
+  - "AI"
+  - "Diagnostics"
+  - "Genetics"
+  - "Precision medicine"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/19/precision-medicine-healthcare-tailored-to-you/"
 ---
 

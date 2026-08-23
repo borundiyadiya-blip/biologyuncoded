@@ -1,15 +1,9 @@
 ---
 title: "Multiplex Genome Engineering Using CRISPR/Cas Systems: Dissecting the Paper"
 date: 2025-07-20
-description: "Introduction: This paper discusses the groundbreaking application of CRISPR-Cas9 technology in gene editing within mammalian cells. Specifically, it outlines how the system originally found in Streptococcus pyogenes was reprogrammed to edit human and mouse genomes. It also delves into both the powerful potential and limitations of this transformative genome editing tool. The Biology of CRISPR-Cas9: […]"
+description: "Introduction: This paper discusses the groundbreaking application of CRISPR-Cas9 technology in gene editing within mammalian cells."
 tags:
-  - "cas9"
-  - "crispr"
-  - "crRNA"
-  - "Diya Borundiya"
-  - "HDR"
-  - "NHEJ"
-  - "tracrRNA"
+  - "Gene editing"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/20/multiplex-genome-engineering-using-crispr-cas-systems-dissecting-the-paper/"
 ---
 

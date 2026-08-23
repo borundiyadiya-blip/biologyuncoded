@@ -17,11 +17,16 @@
 
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' }}">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+{#- Fonts are self-hosted (tools/fetch-fonts.mjs). Preload the two faces that
+    render above the fold — the body serif and the heading mono — so they are
+    in flight before the CSS that references them has finished parsing. #}
+<link rel="preload" href="{{ '/fonts/source-serif-4-400-600var.woff2' }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/fonts/ibm-plex-mono-600.woff2' }}" as="font" type="font/woff2" crossorigin>
 
+<link rel="stylesheet" href="{{ '/css/fonts.css' }}">
 <link rel="stylesheet" href="{{ '/css/style.css' }}">
+
+<link rel="icon" href="{{ '/favicon.svg' }}" type="image/svg+xml">
 </head>
 
 <body>
@@ -61,6 +66,18 @@
     </p>
   </div>
 </footer>
+
+{#- Prerender same-origin links the reader is likely to open next. Chromium
+    only; every other browser ignores the block entirely, so it is pure upside
+    on a static site with no auth and no side-effecting URLs. #}
+<script type="speculationrules">
+{
+  "prerender": [{
+    "where": { "href_matches": "/*" },
+    "eagerness": "moderate"
+  }]
+}
+</script>
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 ---
 title: "The \"Invisible\" Cure: How 2026 Just Changed Diabetes Forever"
 date: 2026-04-13
-description: "For over a hundred years, the story of Type 1 Diabetes (T1D) has been one of management, not resolution. It’s been a life of constant calculations, midnight alarms, and the relentless hum of insulin pumps. But as of March 2026, the narrative has officially shifted. The successful 14-month data from the \"Hypoimmune\" Islet trials isn't […]"
+description: "For over a hundred years, the story of Type 1 Diabetes (T1D) has been one of management, not resolution. It’s been a life of constant calculations, midnight alarms, and the relentless hum of insulin pumps."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/04/13/the-invisible-cure-how-2026-just-changed-diabetes-forever/"
 ---
 

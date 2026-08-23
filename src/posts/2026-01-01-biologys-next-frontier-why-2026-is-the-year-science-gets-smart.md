@@ -1,7 +1,7 @@
 ---
 title: "Biology's Next Frontier: Why 2026 is the Year Science Gets \"Smart\""
 date: 2026-01-01
-description: "Remember when biology was all about dissecting frogs and memorizing species names? Well, welcome to 2026, where the cutting edge of life science looks more like a scene from a high-tech lab than a high school classroom. We're not just observing nature anymore; we're actively redesigning it, and much of this revolution is thanks to […]"
+description: "Remember when biology was all about dissecting frogs and memorizing species names? Well, welcome to 2026, where the cutting edge of life science looks more like a scene from a high-tech lab than a high school classroom."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/01/01/biologys-next-frontier-why-2026-is-the-year-science-gets-smart/"
 ---
 

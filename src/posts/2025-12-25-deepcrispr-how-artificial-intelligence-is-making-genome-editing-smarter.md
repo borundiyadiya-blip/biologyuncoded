@@ -1,7 +1,7 @@
 ---
 title: "DeepCRISPR: How Artificial Intelligence Is Making Genome Editing Smarter"
 date: 2025-12-25
-description: "CRISPR has transformed biology by giving scientists a programmable way to edit DNA, but its power has always been limited by a deceptively simple question: which guide RNA should we use? DeepCRISPR emerged as one of the first serious attempts to answer this using artificial intelligence, reframing genome editing as a data-driven optimization problem rather […]"
+description: "CRISPR has transformed biology by giving scientists a programmable way to edit DNA, but its power has always been limited by a deceptively simple question: which guide RNA should we use?"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/12/25/deepcrispr-how-artificial-intelligence-is-making-genome-editing-smarter/"
 ---
 

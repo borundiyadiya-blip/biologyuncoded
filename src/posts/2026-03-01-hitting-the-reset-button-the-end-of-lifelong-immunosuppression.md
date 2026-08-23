@@ -1,7 +1,7 @@
 ---
 title: "Hitting the Reset Button: The End of Lifelong Immunosuppression?"
 date: 2026-03-01
-description: "The landscape of immunology is witnessing a seismic shift. For years, CAR-T cell therapy was the \"holy grail\" of oncology, transforming terminal blood cancers into manageable, and often curable, conditions. In 2026, we are seeing that same revolutionary logic applied to the \"unsolvable\" puzzles of the immune system. Recent data is confirming what researchers long […]"
+description: "The landscape of immunology is witnessing a seismic shift. For years, CAR-T cell therapy was the “holy grail” of oncology, transforming terminal blood cancers into manageable, and often curable, conditions."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/03/01/hitting-the-reset-button-the-end-of-lifelong-immunosuppression/"
 ---
 

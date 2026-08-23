@@ -1,14 +1,9 @@
 ---
 title: "Transcription and Translation: Life’s Language Decoded"
 date: 2025-07-21
-description: "In every cell of your body lies a master script — your DNA, a double-helix archive of 3 billion letters. But unlike a novel, it doesn’t tell a story in the usual sense. Instead, it writes instructions — molecular blueprints for every protein that makes up your brain, your muscles, your blood, your immune system, […]"
+description: "In every cell of your body lies a master script — your DNA, a double-helix archive of 3 billion letters. But unlike a novel, it doesn’t tell a story in the usual sense."
 tags:
-  - "Diya Borundiya"
-  - "dna"
-  - "genes"
-  - "RNA"
-  - "transcription"
-  - "translation"
+  - "Genetics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/21/transcription-and-translation-lifes-language-decoded/"
 ---
 

@@ -1,15 +1,11 @@
 ---
 title: "CRISPR and the Brain: Editing Memory, Emotion, and Consciousness"
 date: 2025-07-22
-description: "In the quiet space between neurons—those tiny electrical bridges that carry our thoughts—science is beginning to whisper a radical idea: what if we could edit the human brain? Not just treat its diseases, but actually rewrite memory, reshape emotion, or even reprogram consciousness itself? With the advent of gene editing tools like CRISPR, what once […]"
+description: "In the quiet space between neurons—those tiny electrical bridges that carry our thoughts—science is beginning to whisper a radical idea: what if we could edit the human brain?"
 tags:
-  - "brain"
-  - "crispr"
-  - "dementia"
-  - "Diya Borundiya"
-  - "emotion"
-  - "gene editing"
-  - "memories"
+  - "Alzheimer's"
+  - "Gene editing"
+  - "Neuroscience"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/22/crispr-and-the-brain-editing-memory-emotion-and-consciousness/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Mapping the Cellular Matrix: A Deep Dive into STAR Alignment"
 date: 2026-07-16
-description: "Imagine trying to reconstruct a complex puzzle, but half the pieces have been cut in two, shuffled, and scattered across a massive blueprint. That is the exact challenge bioinformaticians face when dealing with RNA-sequencing (RNA-seq) data. Because eukaryotic genes are interrupted by non-coding regions (introns) that are spliced out before translation, the sequencing reads we […]"
+description: "Imagine trying to reconstruct a complex puzzle, but half the pieces have been cut in two, shuffled, and scattered across a massive blueprint."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/15/mapping-the-cellular-matrix-a-deep-dive-into-star-alignment/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Beyond the 100-Year Life: Welcome to the Healthspan Revolution"
 date: 2026-02-16
-description: "For decades, modern medicine has had a singular, driving goal: keep people alive longer. By almost every metric, it has succeeded. Thanks to vaccines, antibiotics, and advancements in heart disease and cancer treatment, global life expectancy has soared over the last century. We are getting very good at adding years to life. But we are […]"
+description: "For decades, modern medicine has had a singular, driving goal: keep people alive longer. By almost every metric, it has succeeded."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/02/16/beyond-the-100-year-life-welcome-to-the-healthspan-revolution/"
 ---
 

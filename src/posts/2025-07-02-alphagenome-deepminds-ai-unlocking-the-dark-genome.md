@@ -1,17 +1,10 @@
 ---
 title: "AlphaGenome: DeepMind’s AI Unlocking the Dark Genome"
 date: 2025-07-02
-description: "You may have heard of AlphaFold, the AI that predicts protein structures—a major breakthrough in biology. Now, DeepMind is turning its attention to the non-coding regions of DNA with a new tool called AlphaGenome. These vast stretches of the genome—sometimes called “dark matter”—don’t make proteins, but they play crucial roles in controlling gene expression, disease […]"
+description: "You may have heard of AlphaFold, the AI that predicts protein structures—a major breakthrough in biology. Now, DeepMind is turning its attention to the non-coding regions of DNA with a new tool called AlphaGenome."
 tags:
-  - "alphafold"
-  - "alphagenome"
-  - "deepmind"
-  - "Diya Borundiya"
-  - "dna"
-  - "genome"
-  - "mutations"
-  - "non-coding DNA"
-  - "RNA"
+  - "AI"
+  - "Genetics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/02/alphagenome-deepminds-ai-unlocking-the-dark-genome/"
 ---
 

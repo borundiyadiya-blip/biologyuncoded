@@ -1,16 +1,10 @@
 ---
 title: "Can CRISPR-Cas9 Be Used to Treat Cancer? Here’s What the Science Says"
 date: 2025-07-13
-description: "Cancer is a complex and often unpredictable disease. Traditional treatments like chemotherapy, radiation, and surgery have saved countless lives—but they often come with harsh side effects and aren’t always effective, especially for aggressive or advanced cancers. Enter CRISPR-Cas9, a revolutionary gene-editing tool that has transformed the way scientists think about treating disease. Originally developed as […]"
+description: "Cancer is a complex and often unpredictable disease. Traditional treatments like chemotherapy, radiation, and surgery have saved countless lives—but they often come with harsh side…"
 tags:
-  - "cancer"
-  - "cancer cure"
-  - "cancer treatment"
-  - "crispr"
-  - "crispr cas9"
-  - "Diya Borundiya"
-  - "oncogenic"
-  - "oncogenic mutations"
+  - "Cancer"
+  - "Gene editing"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/07/13/can-crispr-cas9-be-used-to-treat-cancer-heres-what-the-science-says/"
 ---
 

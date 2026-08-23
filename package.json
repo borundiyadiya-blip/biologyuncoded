@@ -7,6 +7,9 @@
     "build": "npm run clean && eleventy",
     "import": "node tools/import-wordpress.mjs",
     "import:wpcom": "node tools/import-wpcom.mjs",
+    "fonts": "node tools/fetch-fonts.mjs",
+    "check": "node tools/check-links.mjs",
+    "tidy": "node tools/tidy-posts.mjs",
     "clean": "node tools/clean.mjs"
   },
   "author": "",

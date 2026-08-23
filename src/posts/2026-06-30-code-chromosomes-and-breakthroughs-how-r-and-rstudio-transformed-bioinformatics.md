@@ -1,7 +1,7 @@
 ---
 title: "Code, Chromosomes, and Breakthroughs: How R and RStudio Transformed Bioinformatics"
 date: 2026-06-30
-description: "Not too long ago, a biologist’s primary toolkit consisted of pipettes, petri dishes, and microscopes. Today, a modern biologist is just as likely to be found staring at lines of code on a laptop screen. As high-throughput sequencing technologies have advanced, biology has fundamentally transformed into a data-driven science. A single human genome sequence generates […]"
+description: "Not too long ago, a biologist’s primary toolkit consisted of pipettes, petri dishes, and microscopes. Today, a modern biologist is just as likely to be found staring at lines of code on a laptop screen."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/30/code-chromosomes-and-breakthroughs-how-r-and-rstudio-transformed-bioinformatics/"
 ---
 

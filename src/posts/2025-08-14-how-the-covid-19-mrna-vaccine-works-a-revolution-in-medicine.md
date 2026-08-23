@@ -1,7 +1,7 @@
 ---
 title: "How the COVID-19 mRNA Vaccine Works: A Revolution in Medicine"
 date: 2025-08-14
-description: "In late 2019, the world faced a novel virus: SARS-CoV-2, which causes COVID-19. As cases surged globally, scientists raced to develop a vaccine that could stop the pandemic. One of the most remarkable breakthroughs was the creation of mRNA vaccines, a new technology that had never been widely used before in humans. But how exactly […]"
+description: "In late 2019, the world faced a novel virus: SARS-CoV-2, which causes COVID-19. As cases surged globally, scientists raced to develop a vaccine that could stop the pandemic."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/08/14/how-the-covid-19-mrna-vaccine-works-a-revolution-in-medicine/"
 ---
 

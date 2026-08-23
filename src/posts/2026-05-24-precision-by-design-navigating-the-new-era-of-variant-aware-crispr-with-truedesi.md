@@ -1,7 +1,7 @@
 ---
 title: "Precision by Design: Navigating the New Era of Variant-Aware CRISPR with TrueDesign"
 date: 2026-05-24
-description: "In the fast-moving world of 2026 biotechnology, \"precision\" has taken on a whole new meaning. It’s no longer enough to just edit a gene; the industry has moved toward personalized genome engineering. At the heart of this shift is TrueDesign, a platform that has redefined how we approach CRISPR by solving one of biology’s messiest […]"
+description: "In the fast-moving world of 2026 biotechnology, “precision” has taken on a whole new meaning. It’s no longer enough to just edit a gene; the industry has moved toward personalized genome engineering."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/05/24/precision-by-design-navigating-the-new-era-of-variant-aware-crispr-with-truedesign/"
 ---
 

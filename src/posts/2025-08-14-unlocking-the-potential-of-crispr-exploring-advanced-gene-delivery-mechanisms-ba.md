@@ -1,7 +1,7 @@
 ---
 title: "Unlocking the Potential of CRISPR: Exploring Advanced Gene Delivery Mechanisms based on the Xu et. al 2025 paper"
 date: 2025-08-14
-description: "CRISPR/Cas technology has revolutionized biology, allowing scientists to edit genes with unprecedented precision. But even the most sophisticated gene-editing tools are only as effective as the systems used to deliver them into cells. Over the past decade, researchers have developed a variety of innovative delivery mechanisms, each with unique advantages and challenges. From viral vectors […]"
+description: "CRISPR/Cas technology has revolutionized biology, allowing scientists to edit genes with unprecedented precision."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/08/14/unlocking-the-potential-of-crispr-exploring-advanced-gene-delivery-mechanisms-based-on-the-xu-et-al-2025-paper/"
 ---
 

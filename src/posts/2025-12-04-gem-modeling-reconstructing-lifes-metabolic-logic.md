@@ -1,7 +1,7 @@
 ---
 title: "GEM Modeling: Reconstructing Life’s Metabolic Logic"
 date: 2025-12-04
-description: "Genome-scale metabolic (GEM) modeling represents a shift in how biology interprets life—not as a static sequence of genes, but as a mathematically navigable network of chemical decisions. Instead of asking what a gene does, GEM frameworks ask how thousands of reactions cooperate to keep a cell alive, adapt under stress, or collapse under therapy. Each […]"
+description: "Genome-scale metabolic (GEM) modeling represents a shift in how biology interprets life—not as a static sequence of genes, but as a mathematically navigable network of chemical decisions."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/12/03/gem-modeling-reconstructing-lifes-metabolic-logic/"
 ---
 

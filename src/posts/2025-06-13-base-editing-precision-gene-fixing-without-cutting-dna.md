@@ -1,14 +1,10 @@
 ---
 title: "Base Editing: Precision Gene Fixing Without Cutting DNA"
 date: 2025-06-13
-description: "We’ve all heard of CRISPR—the revolutionary tool that lets scientists cut and edit DNA. But what if we could fix genetic mutations with even more precision, without cutting the DNA at all? That’s exactly what base editing does. It’s a next-generation gene editing tool that’s more refined, more accurate, and potentially safer than traditional CRISPR. […]"
+description: "We’ve all heard of CRISPR—the revolutionary tool that lets scientists cut and edit DNA. But what if we could fix genetic mutations with even more precision, without cutting the DNA at all?"
 tags:
-  - "base editing"
-  - "crispr"
-  - "Diya Borundiya"
-  - "dna"
-  - "gene editing"
-  - "mutations"
+  - "Gene editing"
+  - "Genetics"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/13/base-editing-precision-gene-fixing-without-cutting-dna/"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "A Child's Milestone:Stanford Medicine's Proton Therapy Era Begins"
 date: 2026-06-08
-description: "On June 4, 2025, a seven-year-old with a rare brain tumor made history — becoming the first patient ever treated at Stanford Medicine's new proton therapy center. There are moments in medicine that feel quietly extraordinary — not headline-grabbing, but deeply human. A seven-year-old child, facing a diagnosis no family should ever have to hear, […]"
+description: "On June 4, 2025, a seven-year-old with a rare brain tumor made history — becoming the first patient ever treated at Stanford Medicine’s new proton therapy center."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/06/08/a-childs-milestonestanford-medicines-proton-therapy-era-begins/"
 ---
 

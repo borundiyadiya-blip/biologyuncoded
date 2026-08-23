@@ -1,15 +1,11 @@
 ---
 title: "Metabolic Reprogramming: Starving Tumours by Cutting Off Their Fuel Supply"
 date: 2025-04-19
-description: "Cancer is often described as a disease of uncontrolled cell growth. But to grow, cancer cells need something very basic: fuel. And they’re greedy about it. Unlike healthy cells that use energy efficiently, cancer cells often rewire their metabolism to suck up nutrients at an accelerated pace. This unique behaviour is at the heart of […]"
+description: "Cancer is often described as a disease of uncontrolled cell growth. But to grow, cancer cells need something very basic: fuel. And they’re greedy about it."
 tags:
-  - "cancer"
-  - "diet"
-  - "Diya Borundiya"
-  - "health"
-  - "nutrition"
-  - "Tumor"
-  - "wellness"
+  - "Cancer"
+  - "Nutrition"
+  - "Wellness"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/19/metabolic-reprogramming-starving-tumours-by-cutting-off-their-fuel-supply/"
 ---
 

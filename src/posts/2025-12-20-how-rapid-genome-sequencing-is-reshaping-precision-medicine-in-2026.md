@@ -1,7 +1,7 @@
 ---
 title: "How Rapid Genome Sequencing Is Reshaping Precision Medicine in 2026"
 date: 2025-12-20
-description: "In the past decade, genome sequencing has evolved from a research specialty to a tool poised to transform everyday clinical care. Surgeons, geneticists, and primary care physicians are now preparing for an era where reading and interpreting a patient’s entire DNA blueprint takes place in hours rather than weeks—a shift that has profound implications for […]"
+description: "In the past decade, genome sequencing has evolved from a research specialty to a tool poised to transform everyday clinical care."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/12/20/how-rapid-genome-sequencing-is-reshaping-precision-medicine-in-2026/"
 ---
 

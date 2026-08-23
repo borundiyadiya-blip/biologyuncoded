@@ -1,14 +1,11 @@
 ---
 title: "The Science of Flow States: What Happens in Your Brain When You’re “In the Zone”"
 date: 2025-04-27
-description: "You know the feeling. You’re so focused on what you’re doing—writing, painting, running, coding—that the outside world fades away. Hours pass like minutes. You’re performing at your absolute best, but it feels almost effortless. This is called a flow state—and it’s not magic. It’s biology. Scientists are uncovering how flow happens in the brain, why […]"
+description: "You know the feeling. You’re so focused on what you’re doing—writing, painting, running, coding—that the outside world fades away. Hours pass like minutes."
 tags:
-  - "brain"
-  - "Diya Borundiya"
-  - "flow state"
-  - "focus"
-  - "productivity"
-  - "psychology"
+  - "Mental health"
+  - "Neuroscience"
+  - "Wellness"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/27/the-science-of-flow-states-what-happens-in-your-brain-when-youre-in-the-zone/"
 ---
 

@@ -1,14 +1,9 @@
 ---
 title: "The 2024 Nobel Prize in Chemistry: How AI Unlocked the Mystery of Protein Folding"
 date: 2025-03-22
-description: "For decades, scientists struggled with one of biology’s greatest challenges: predicting how proteins fold into their functional three-dimensional structures. This problem was so complex that it seemed nearly unsolvable—until artificial intelligence stepped in. In 2024, the Nobel Prize in Chemistry was awarded to Demis Hassabis and John Jumper of DeepMind, along with David Baker of […]"
+description: "For decades, scientists struggled with one of biology’s greatest challenges: predicting how proteins fold into their functional three-dimensional structures."
 tags:
-  - "2024"
-  - "alphafold"
-  - "chemistry"
-  - "Diya Borundiya"
-  - "Nobel prize"
-  - "protein folding"
+  - "AI"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/03/22/the-2024-nobel-prize-in-chemistry-how-ai-unlocked-the-mystery-of-protein-folding/"
 ---
 

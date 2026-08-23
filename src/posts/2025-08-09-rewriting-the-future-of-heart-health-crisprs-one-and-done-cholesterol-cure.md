@@ -1,12 +1,10 @@
 ---
 title: "Rewriting the Future of Heart Health: CRISPR’s One-and-Done Cholesterol Cure"
 date: 2025-08-09
-description: "Imagine a single genetic intervention reshaping our cardiovascular destiny, not just for some, but potentially for millions. CRISPR Therapeutics is working toward that revolution with CTX310, a one-time, in vivo CRISPR/Cas9 therapy designed to silence the ANGPTL3 gene in the liver. By doing so, it dramatically reduces levels of both LDL (“bad”) cholesterol and triglycerides, […]"
+description: "Imagine a single genetic intervention reshaping our cardiovascular destiny, not just for some, but potentially for millions."
 tags:
-  - "cholestrol"
-  - "crispr"
-  - "Diya Borundiya"
-  - "Lipid"
+  - "Gene editing"
+  - "Nutrition"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/08/08/rewriting-the-future-of-heart-health-crisprs-one-and-done-cholesterol-cure/"
 ---
 

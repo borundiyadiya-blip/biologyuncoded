@@ -16,6 +16,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
   eleventyConfig.addPassthroughCopy({ "src/js": "js" });
   eleventyConfig.addPassthroughCopy({ "src/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
   eleventyConfig.addWatchTarget("src/css/");
@@ -43,7 +44,14 @@ export default function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (md) => {
     md.use(markdownItFootnote);
     md.use(markdownItAnchor, {
-      permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true }),
+      // Not headerLink: that wraps the whole heading in a self-link, so every
+      // h2/h3 in a post becomes a tab stop that goes nowhere — 15-20 of them
+      // on a long post — while looking like plain text to sighted users.
+      permalink: markdownItAnchor.permalink.ariaHidden({
+        placement: "after",
+        class: "header-anchor",
+        symbol: "#",
+      }),
       level: [2, 3],
     });
     md.set({ html: true, breaks: false, linkify: true });
@@ -130,6 +138,21 @@ export default function (eleventyConfig) {
       (_m, attr) => `${attr}${ORIGIN}${PREFIX}/`
     )
   );
+
+  // ---------------------------------------------------------------- transforms
+  // WordPress's block editor emitted several tables whose header row is <td>
+  // rather than <th>, so a screen reader never announces the column a cell
+  // belongs to. Cheaper to repair on the way out than to hand-edit the posts.
+  eleventyConfig.addTransform("theadScope", function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    return content.replace(
+      /<thead>([\s\S]*?)<\/thead>/g,
+      (_m, inner) =>
+        "<thead>" +
+        inner.replace(/<td(\s[^>]*)?>/g, "<th$1 scope=\"col\">").replace(/<\/td>/g, "</th>") +
+        "</thead>"
+    );
+  });
 
   // ---------------------------------------------------------------- collections
   eleventyConfig.addCollection("posts", (api) =>

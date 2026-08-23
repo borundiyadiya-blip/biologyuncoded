@@ -1,18 +1,10 @@
 ---
 title: "Lab-Grown Meat in 2025: Progress, Ethics, and the Road Ahead"
 date: 2025-04-12
-description: "Imagine eating a burger that looks, cooks, and tastes just like real beef—except it didn’t come from a slaughtered cow. It was grown in a lab. A few years ago, that might have sounded like science fiction. But today, in 2025, lab-grown meat, also known as cultivated meat, is edging closer to our dinner plates—and […]"
+description: "Imagine eating a burger that looks, cooks, and tastes just like real beef—except it didn’t come from a slaughtered cow. It was grown in a lab. A few years ago, that might have sounded like science fiction."
 tags:
-  - "diet"
-  - "Diya Borundiya"
-  - "fake meat"
-  - "food"
-  - "genetically modified"
-  - "health"
-  - "lab"
-  - "nutrition"
-  - "TLC"
-  - "vegan"
+  - "Gene editing"
+  - "Nutrition"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/12/lab-grown-meat-in-2025-progress-ethics-and-the-road-ahead/"
 ---
 

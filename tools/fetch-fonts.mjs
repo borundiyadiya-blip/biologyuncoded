@@ -25,6 +25,7 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const FONT_DIR = "src/fonts";
 const CSS_OUT = "src/css/fonts.css";
@@ -60,8 +61,11 @@ if (!blocks.length) throw new Error("No @font-face blocks found in the response"
 
 await fs.mkdir(FONT_DIR, { recursive: true });
 
-const rules = [];
-let kept = 0;
+// Collected first, written second: Google serves ONE variable file for several
+// weights of the same family, so the same bytes arrive under two weights. We
+// hash the payload, keep a single copy, and emit one @font-face carrying the
+// whole weight range instead of two identical 120 KB downloads.
+const faces = [];
 let total = 0;
 
 for (const block of blocks) {
@@ -79,31 +83,63 @@ for (const block of blocks) {
 
   if (!family || !weight || !src) continue;
 
-  const slug =
-    family.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") +
-    `-${weight}` +
-    (style !== "normal" ? `-${style}` : "");
-  const file = `${slug}.woff2`;
-
   const bin = await fetch(src, { headers: { "user-agent": UA } });
   if (!bin.ok) throw new Error(`HTTP ${bin.status} fetching ${src}`);
   const bytes = Buffer.from(await bin.arrayBuffer());
-  await fs.writeFile(path.join(FONT_DIR, file), bytes);
 
-  console.log(`  ${file.padEnd(28)} ${(bytes.length / 1024).toFixed(1)} KB`);
+  faces.push({
+    family,
+    weight: Number(weight),
+    style,
+    range,
+    bytes,
+    hash: crypto.createHash("sha1").update(bytes).digest("hex"),
+  });
+}
+
+// Group by identical payload: one file, one rule, one weight range.
+const byHash = new Map();
+for (const f of faces) {
+  const g = byHash.get(f.hash);
+  if (g) g.weights.push(f.weight);
+  else byHash.set(f.hash, { ...f, weights: [f.weight] });
+}
+
+const rules = [];
+let kept = 0;
+
+for (const g of byHash.values()) {
+  const lo = Math.min(...g.weights);
+  const hi = Math.max(...g.weights);
+  const slugBase = g.family
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  const file =
+    `${slugBase}-${lo === hi ? lo : `${lo}-${hi}var`}` +
+    (g.style !== "normal" ? `-${g.style}` : "") +
+    ".woff2";
+
+  await fs.writeFile(path.join(FONT_DIR, file), g.bytes);
+  console.log(
+    `  ${file.padEnd(30)} ${(g.bytes.length / 1024).toFixed(1).padStart(6)} KB` +
+      (lo === hi ? "" : `  (variable, covers ${g.weights.sort().join("/")})`)
+  );
   kept++;
 
   rules.push(
     [
       "@font-face {",
-      `  font-family: "${family}";`,
-      `  font-style: ${style};`,
-      `  font-weight: ${weight};`,
+      `  font-family: "${g.family}";`,
+      `  font-style: ${g.style};`,
+      // A range makes the browser use this one variable file for every weight
+      // in it, instead of synthesising or refusing to match.
+      `  font-weight: ${lo === hi ? lo : `${lo} ${hi}`};`,
       // swap: show fallback text immediately rather than blank text, and accept
       // the reflow. The alternative (block) hides the article for up to 3s.
       "  font-display: swap;",
       `  src: url("../fonts/${file}") format("woff2");`,
-      range ? `  unicode-range: ${range};` : null,
+      g.range ? `  unicode-range: ${g.range};` : null,
       "}",
     ]
       .filter(Boolean)

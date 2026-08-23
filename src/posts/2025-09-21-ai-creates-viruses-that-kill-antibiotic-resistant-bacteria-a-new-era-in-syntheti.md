@@ -1,7 +1,7 @@
 ---
 title: "AI Creates Viruses That Kill Antibiotic-Resistant Bacteria: A New Era in Synthetic Biology"
 date: 2025-09-21
-description: "Antibiotic resistance is often called a “silent pandemic.” Each year, resistant infections kill an estimated 1.2 million people worldwide, a number expected to rise sharply if new solutions aren’t found. For decades, antibiotics have been the cornerstone of modern medicine, but bacteria are evolving faster than our ability to make new drugs. Now, scientists have […]"
+description: "Antibiotic resistance is often called a “silent pandemic.” Each year, resistant infections kill an estimated 1.2 million people worldwide, a number expected to rise sharply if new solutions aren’t found."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/09/21/ai-creates-viruses-that-kill-antibiotic-resistant-bacteria-a-new-era-in-synthetic-biology/"
 ---
 

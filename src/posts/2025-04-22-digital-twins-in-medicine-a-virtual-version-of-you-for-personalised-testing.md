@@ -1,15 +1,11 @@
 ---
 title: "Digital Twins in Medicine: A Virtual Version of You for Personalised Testing"
 date: 2025-04-22
-description: "Imagine your doctor having access to a digital version of you—a living, breathing model that mirrors your organs, metabolism, and even your DNA. Before giving you a new medication or recommending surgery, they test it on your digital twin first. Sound futuristic? This idea, once reserved for sci-fi, is now becoming a reality. Known as […]"
+description: "Imagine your doctor having access to a digital version of you—a living, breathing model that mirrors your organs, metabolism, and even your DNA."
 tags:
-  - "ai"
-  - "artificial-intelligence"
-  - "digital twins"
-  - "Diya Borundiya"
-  - "health"
-  - "healthcare"
-  - "technology"
+  - "AI"
+  - "Digital twins"
+  - "Precision medicine"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/22/digital-twins-in-medicine-a-virtual-version-of-you-for-personalised-testing/"
 ---
 

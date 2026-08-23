@@ -1,17 +1,11 @@
 ---
 title: "Personalized Kidney Cancer Vaccine Shows Promise at Yale Medicine"
 date: 2025-06-22
-description: "A new, personalized vaccine for kidney cancer has produced remarkable results in a small clinical trial led by Yale Cancer Center and Dana‑Farber Cancer Institute. The study, published in Nature on February 5, 2025, offers fresh hope in preventing cancer recurrence after surgery in high-risk patients. What Makes This Vaccine Unique? This isn’t typical immunotherapy—it’s […]"
+description: "A new, personalized vaccine for kidney cancer has produced remarkable results in a small clinical trial led by Yale Cancer Center and Dana‑Farber Cancer Institute."
 tags:
-  - "cancer"
-  - "Diya Borundiya"
-  - "dna"
-  - "kidney cancer"
-  - "nature"
-  - "personalised therapy"
-  - "Tumor"
-  - "yale"
-  - "yale medicine"
+  - "Cancer"
+  - "Genetics"
+  - "Precision medicine"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/06/22/personalized-kidney-cancer-vaccine-shows-promise-at-yale-medicine/"
 ---
 

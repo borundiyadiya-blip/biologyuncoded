@@ -1,14 +1,10 @@
 ---
 title: "The Gut-Brain Axis: How Your Microbiome Affects Anxiety and Depression"
 date: 2025-04-25
-description: "We often think of mental health as something that lives entirely in the brain. But recent science is telling a very different story—one that starts much lower in the body. It turns out, your gut and your brain are in constant communication. And what’s more surprising? The trillions of microbes in your digestive system—known as […]"
+description: "We often think of mental health as something that lives entirely in the brain. But recent science is telling a very different story—one that starts much lower in the body."
 tags:
-  - "Diya Borundiya"
-  - "gut-health"
-  - "health"
-  - "mental-health"
-  - "nutrition"
-  - "probiotics"
+  - "Mental health"
+  - "Nutrition"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/04/25/the-gut-brain-axis-how-your-microbiome-affects-anxiety-and-depression/"
 ---
 

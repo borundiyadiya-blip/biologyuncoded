@@ -20,7 +20,7 @@ eleventyComputed:
       {% if topic.name in p.data.tags %}
       <li class="postlist-item">
         <p class="eyebrow"><time datetime="{{ p.date | isoDate }}">{{ p.date | shortDate }}</time></p>
-        <h3 class="postlist-title"><a href="{{ p.url }}">{{ p.data.title }}</a></h3>
+        <h2 class="postlist-title"><a href="{{ p.url }}">{{ p.data.title }}</a></h2>
         <p class="postlist-excerpt">{{ p.data.description or (p.templateContent | excerpt(190)) }}</p>
       </li>
       {% endif %}
