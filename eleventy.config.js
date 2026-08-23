@@ -6,6 +6,11 @@ import markdownItFootnote from "markdown-it-footnote";
 
 import site from "./src/_data/site.js";
 
+// Page URLs already carry pathPrefix by the time anything joins them onto a
+// base, so the base has to be the bare origin — not origin + basePath, which
+// is what site.url is on a project site.
+const ORIGIN = new URL(site.url).origin;
+
 export default function (eleventyConfig) {
   // ---------------------------------------------------------------- passthrough
   eleventyConfig.addPassthroughCopy({ "src/css": "css" });
@@ -28,7 +33,7 @@ export default function (eleventyConfig) {
       language: "en",
       title: site.title,
       subtitle: site.description,
-      base: site.url,
+      base: ORIGIN,
       author: { name: site.author.name },
     },
   });
@@ -101,11 +106,16 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));
 
-  eleventyConfig.addFilter("absoluteUrl", (path) => {
+  // Named absUrl, not absoluteUrl: eleventy-plugin-rss registers an absoluteUrl
+  // filter of its own, and plugins are applied *after* this function runs, so a
+  // filter registered here under that name gets silently clobbered — and the
+  // plugin's version is a no-op when called without a base. Feed this
+  // pathPrefix-ed input: {{ page.url | url | absUrl }}
+  eleventyConfig.addFilter("absUrl", (path) => {
     try {
-      return new URL(path, site.url).href;
+      return new URL(path, ORIGIN).href;
     } catch {
-      return site.url;
+      return ORIGIN;
     }
   });
 
