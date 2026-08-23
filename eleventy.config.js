@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
+import { HtmlBasePlugin } from "@11ty/eleventy";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItFootnote from "markdown-it-footnote";
 
@@ -25,18 +25,19 @@ export default function (eleventyConfig) {
     preAttributes: { tabindex: 0 },
   });
 
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom",
-    outputPath: "/feed.xml",
-    collection: { name: "posts", limit: 25 },
-    metadata: {
-      language: "en",
-      title: site.title,
-      subtitle: site.description,
-      base: ORIGIN,
-      author: { name: site.author.name },
-    },
-  });
+  // Applies pathPrefix to every href/src in the built HTML — including links
+  // and images inside post Markdown, which no template filter can reach.
+  // Registered exactly once: registering it twice double-prefixes every URL.
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
+  // The Atom feed is a plain template (src/feed.njk) rather than
+  // @11ty/eleventy-plugin-rss. That plugin registers Eleventy's HtmlBasePlugin
+  // twice — once in virtualTemplate.js and again via the rssPlugin it nests —
+  // so every href/src in every page came out with the pathPrefix applied twice
+  // on top of the theme's own `| url` filter, i.e. /biologyuncoded/biology-
+  // uncoded/biologyuncoded/…, which broke every link and the stylesheet on the
+  // deployed project site. It also shadowed our absoluteUrl filter. A 20-line
+  // template we control is cheaper than working around both.
 
   // ---------------------------------------------------------------- markdown
   eleventyConfig.amendLibrary("md", (md) => {
@@ -118,6 +119,17 @@ export default function (eleventyConfig) {
       return ORIGIN;
     }
   });
+
+  // Feed readers resolve nothing for you, so post bodies going into feed.xml
+  // need absolute href/src. HtmlBasePlugin only rewrites .html output, and the
+  // feed embeds templateContent directly, so do it here.
+  const PREFIX = (process.env.PATH_PREFIX || "/").replace(/\/+$/, "");
+  eleventyConfig.addFilter("absoluteLinks", (html) =>
+    String(html ?? "").replace(
+      /(\s(?:href|src)=")\/(?!\/)/g,
+      (_m, attr) => `${attr}${ORIGIN}${PREFIX}/`
+    )
+  );
 
   // ---------------------------------------------------------------- collections
   eleventyConfig.addCollection("posts", (api) =>

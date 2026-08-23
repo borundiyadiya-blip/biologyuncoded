@@ -16,7 +16,7 @@ permalink: /archive/index.html
       {% for p in group.posts %}
       <li>
         <time datetime="{{ p.date | isoDate }}">{{ p.date | shortDate }}</time>
-        <a href="{{ p.url | url }}">{{ p.data.title }}</a>
+        <a href="{{ p.url }}">{{ p.data.title }}</a>
       </li>
       {% endfor %}
     </ul>

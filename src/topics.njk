@@ -12,7 +12,7 @@ permalink: /topics/index.html
   <ul class="cloud">
     {% for t in collections.tagList %}
     <li>
-      <a class="cloud-tag" href="{{ ('/topics/' + (t.name | slugifyTag) + '/') | url }}" style="--w: {{ t.count }}">
+      <a class="cloud-tag" href="{{ ('/topics/' + (t.name | slugifyTag) + '/') }}" style="--w: {{ t.count }}">
         {{ t.name }}<span class="cloud-count">{{ t.count }}</span>
       </a>
     </li>

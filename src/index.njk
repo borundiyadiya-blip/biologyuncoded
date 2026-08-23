@@ -11,9 +11,9 @@ permalink: "{% if pagination.pageNumber == 0 %}/index.html{% else %}/page/{{ pag
 {% set lead = collections.posts[0] %}
 <section class="lead wrap">
   <p class="eyebrow">Latest <span class="sep">/</span> <time datetime="{{ lead.date | isoDate }}">{{ lead.date | readableDate }}</time></p>
-  <h1 class="lead-title"><a href="{{ lead.url | url }}">{{ lead.data.title }}</a></h1>
+  <h1 class="lead-title"><a href="{{ lead.url }}">{{ lead.data.title }}</a></h1>
   <p class="lead-excerpt">{{ lead.data.description or (lead.templateContent | excerpt(320)) }}</p>
-  <a class="readon" href="{{ lead.url | url }}">Read the post</a>
+  <a class="readon" href="{{ lead.url }}">Read the post</a>
 </section>
 <div class="acgt wrap-rule" aria-hidden="true"></div>
 {% endif %}
@@ -25,7 +25,7 @@ permalink: "{% if pagination.pageNumber == 0 %}/index.html{% else %}/page/{{ pag
       {% if not (pagination.pageNumber == 0 and loop.index0 == 0) %}
       <li class="postlist-item">
         <p class="eyebrow"><time datetime="{{ p.date | isoDate }}">{{ p.date | shortDate }}</time></p>
-        <h3 class="postlist-title"><a href="{{ p.url | url }}">{{ p.data.title }}</a></h3>
+        <h3 class="postlist-title"><a href="{{ p.url }}">{{ p.data.title }}</a></h3>
         <p class="postlist-excerpt">{{ p.data.description or (p.templateContent | excerpt(190)) }}</p>
       </li>
       {% endif %}
@@ -34,9 +34,9 @@ permalink: "{% if pagination.pageNumber == 0 %}/index.html{% else %}/page/{{ pag
 
   {% if pagination.pages.length > 1 %}
   <nav class="paginate" aria-label="Pagination">
-    {% if pagination.href.previous %}<a href="{{ pagination.href.previous | url }}">&larr; Newer</a>{% endif %}
+    {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&larr; Newer</a>{% endif %}
     <span class="paginate-count">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
-    {% if pagination.href.next %}<a href="{{ pagination.href.next | url }}">Older &rarr;</a>{% endif %}
+    {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Older &rarr;</a>{% endif %}
   </nav>
   {% endif %}
 </section>
