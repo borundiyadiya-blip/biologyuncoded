@@ -1,0 +1,41 @@
+{#- Renders nothing until site.newsletter.username is filled in, so the site
+    never ships a form that posts into the void.
+
+    The form posts straight to Buttondown rather than going through JavaScript:
+    a static site has no server to accept it, and a plain form submission keeps
+    working with JS disabled. Buttondown handles the confirmation email, the
+    double opt-in and the unsubscribe link, which is what keeps this compliant
+    with GDPR and CAN-SPAM without us storing anyone's address. -#}
+{% if site.newsletter.username %}
+<aside class="subscribe" aria-labelledby="subscribe-heading">
+  <div class="subscribe-inner">
+    <h2 class="subscribe-title" id="subscribe-heading">{{ site.newsletter.heading }}</h2>
+    <p class="subscribe-blurb">{{ site.newsletter.blurb }}</p>
+
+    <form
+      class="subscribe-form"
+      action="https://buttondown.com/api/emails/embed-subscribe/{{ site.newsletter.username }}"
+      method="post"
+      target="_blank"
+      rel="noopener"
+    >
+      <label class="subscribe-label" for="bd-email">Email address</label>
+      <div class="subscribe-row">
+        <input
+          class="subscribe-input"
+          type="email"
+          name="email"
+          id="bd-email"
+          autocomplete="email"
+          required
+          placeholder="you@example.com"
+        >
+        <button class="subscribe-button" type="submit">Subscribe</button>
+      </div>
+      <p class="subscribe-fine">
+        One email a week, on {{ site.newsletter.sendDay }}. Unsubscribe in one click. No tracking pixels.
+      </p>
+    </form>
+  </div>
+</aside>
+{% endif %}

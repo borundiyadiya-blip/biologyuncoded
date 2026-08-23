@@ -1,0 +1,53 @@
+name: Weekly newsletter
+
+# Sundays at 15:00 UTC. If nothing was published that week the job exits
+# without contacting Buttondown, so quiet weeks send nothing rather than an
+# empty digest.
+on:
+  schedule:
+    - cron: "0 15 * * 0"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build and print the digest without sending it"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build and send the digest
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          # Optional. Without it the digest still sends, just with no written
+          # introduction tying the week's posts together.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: https://borundiyadiya-blip.github.io/biologyuncoded
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            npm run newsletter
+            exit 0
+          fi
+          if [ -z "$BUTTONDOWN_API_KEY" ]; then
+            echo "::error::BUTTONDOWN_API_KEY is not set. Add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          npm run newsletter -- --send

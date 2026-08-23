@@ -15,7 +15,7 @@ permalink: "{% if pagination.pageNumber == 0 %}/index.html{% else %}/page/{{ pag
   <p class="lead-excerpt">{{ lead.data.description or (lead.templateContent | excerpt(320)) }}</p>
   <a class="readon" href="{{ lead.url }}">Read the post</a>
 </section>
-<div class="acgt wrap-rule" aria-hidden="true"></div>
+<div class="wrap-rule">{% include "partials/helix.njk" %}</div>
 {% endif %}
 
 <section class="wrap">

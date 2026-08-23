@@ -30,6 +30,7 @@
 </head>
 
 <body>
+{% include "partials/helix-defs.njk" %}
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="masthead">
@@ -46,15 +47,17 @@
       <a href="{{ '/feed.xml' }}">RSS</a>
     </nav>
   </div>
-  <div class="acgt" aria-hidden="true"></div>
+  {% include "partials/helix.njk" %}
 </header>
 
 <main id="main">
 {{ content | safe }}
 </main>
 
+{% include "partials/subscribe.njk" %}
+
 <footer class="footer">
-  <div class="acgt" aria-hidden="true"></div>
+  {% include "partials/helix.njk" %}
   <div class="wrap footer-inner">
     <p class="footer-by">Written by {{ site.author.name }}.</p>
     <p class="footer-meta">

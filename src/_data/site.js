@@ -24,6 +24,21 @@ export default {
     scholar: "",
   },
 
+  // Weekly digest. Leave `username` empty and no subscribe form is rendered
+  // anywhere — the site simply has no newsletter until you fill it in.
+  //
+  // `username` is your Buttondown username, the one in the URL of your
+  // Buttondown dashboard. Nothing secret goes here: the embed endpoint is
+  // public by design. The API key that sends the digest lives in a repository
+  // secret instead, never in this file.
+  newsletter: {
+    username: "",
+    heading: "The week in biotech, once a week",
+    blurb:
+      "A short Sunday email: what actually happened in biotech this week, what it means, and links to the papers so you can check the claims yourself.",
+    sendDay: "Sundays",
+  },
+
   // Shown in the footer next to the copyright.
   startYear: 2025,
 };

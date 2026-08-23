@@ -196,3 +196,103 @@ save, re-enter it, and save again — GitHub sometimes caches the old base path.
 
 **A post shows raw HTML.** WordPress left a block the converter didn't handle.
 Open the Markdown file and clean it up by hand; it's usually one embed.
+
+---
+
+## The automated pipeline
+
+Three things run on a schedule: research, writing, and the weekly digest. All
+of it lives in `tools/` and `.github/workflows/`, and every piece can be run by
+hand first so you can see what it does before it does it on its own.
+
+### What you have to set up
+
+Two accounts and two secrets. I can't create either account for you — both need
+a password, and that's yours to enter.
+
+**1. Anthropic API key** — pays for the research and writing.
+
+- Sign up at <https://console.anthropic.com>, add billing, create an API key.
+- In your repo: **Settings → Secrets and variables → Actions → New repository
+  secret**, name it exactly `ANTHROPIC_API_KEY`.
+- Budget: three posts a week is roughly 12 model calls a week. Set a spend
+  limit in the Anthropic console anyway — it costs nothing to have one.
+
+**2. Buttondown** — stores subscribers and sends the newsletter.
+
+- Sign up at <https://buttondown.com>. The free tier covers the first 100
+  subscribers, which is more than the 65 you had on WordPress.
+- Settings → Programming → **API key**. Add it as a repository secret named
+  `BUTTONDOWN_API_KEY`.
+- Put your Buttondown username into `newsletter.username` in
+  `src/_data/site.js`. **Until you do, no subscribe form is rendered anywhere**
+  — the site simply has no newsletter, rather than showing a form that posts
+  into nothing.
+
+### Running it by hand
+
+```bash
+npm run research           # what's worth writing about — no model, no cost
+npm run write -- --dry     # research + write one post, print it, save nothing
+npm run write              # actually write it into src/posts/
+npm run newsletter         # build this week's digest and print it, send nothing
+```
+
+`npm run write -- --index 3` picks the third-ranked candidate instead of the
+first. `npm run write -- --draft` forces `draft: true` whatever the review says.
+
+### How a post gets written
+
+1. **`tools/research.mjs`** queries Europe PMC and a couple of journal feeds for
+   the last fortnight, drops anything already in `data/covered.json` or too
+   close to an existing title, scores what's left, and returns a shortlist. No
+   model is involved, so choosing the subject is free and reproducible.
+2. **`tools/write-post.mjs`** then makes three model calls: one that researches
+   the chosen paper with web search, one that writes the post *using only that
+   brief*, and one that fact-checks the draft back against the brief.
+3. If the check fails, or the writer rated its own confidence `low`, the post is
+   saved with `draft: true` and **never publishes**. It sits in `src/posts/` for
+   you to read, fix, and release by deleting that one line.
+
+Every generated post carries its provenance in the front matter:
+
+```yaml
+generated: true
+generatedBy: "claude-opus-5"
+reviewVerdict: "passed"
+sourceUrl: "https://doi.org/10.1234/example"
+```
+
+That's deliberate. If you ever need to answer "which of these did you write?",
+the answer is greppable: `grep -L "generated: true" src/posts/*.md`.
+
+### Schedule
+
+| Workflow | When | What |
+| --- | --- | --- |
+| `write-post.yml` | Mon, Wed, Fri 12:00 UTC | Research, write, build, link-check, commit |
+| `newsletter.yml` | Sundays 15:00 UTC | Digest of the week's posts → Buttondown |
+| `deploy.yml` | every push to `main` | Build and publish |
+
+GitHub's scheduler is best-effort and often runs a few minutes late. Both
+scheduled workflows also have a **Run workflow** button on the Actions tab, and
+the newsletter has a dry-run option there that prints the digest without
+sending it.
+
+If a week has no published posts, the newsletter job exits without contacting
+Buttondown. Quiet weeks send nothing rather than an empty email.
+
+### Turning it off
+
+Disable the workflow on the Actions tab, or delete the schedule block from the
+file. Nothing else depends on it — the site builds and deploys the same either
+way.
+
+### A caveat worth keeping in mind
+
+The fact-check step compares the draft against the brief the model itself
+gathered. That catches invention and overstatement, which are the common
+failure modes. It cannot catch a source that was wrong to begin with — a press
+release overselling a phase I result will survive it. Skim what goes out,
+especially anything about a treatment. The `sourceUrl` in the front matter
+takes you straight to the paper.

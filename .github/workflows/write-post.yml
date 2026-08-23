@@ -1,0 +1,72 @@
+name: Write a post
+
+# Monday, Wednesday and Friday at 12:00 UTC. GitHub's scheduler is best-effort
+# and can run late under load; it is not a precise cron.
+on:
+  schedule:
+    - cron: "0 12 * * 1,3,5"
+  workflow_dispatch:
+    inputs:
+      index:
+        description: "Which candidate to write about (1 = highest ranked)"
+        required: false
+        default: "1"
+      draft:
+        description: "Force draft: true regardless of the review verdict"
+        type: boolean
+        required: false
+        default: false
+
+# Needed to push the new post back to main.
+permissions:
+  contents: write
+
+concurrency:
+  group: write-post
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Research and write
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY is not set. Add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          npm run write -- \
+            --index "${{ inputs.index || '1' }}" \
+            ${{ inputs.draft && '--draft' || '' }}
+
+      # Build and link-check before committing: a post that breaks the site
+      # should never reach main, let alone the live site.
+      - name: Verify the site still builds
+        run: npm run build && npm run check
+
+      - name: Commit
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Nothing new was written — no candidates, or all were already covered."
+            exit 0
+          fi
+          git config user.name  "Biology Uncoded bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/posts data/covered.json
+          FILE=$(git diff --cached --name-only -- src/posts | head -1)
+          git commit -m "Add post: $(basename "${FILE:-untitled}" .md)
+
+          Researched and drafted automatically. See the generated/reviewVerdict
+          fields in the post's front matter for provenance."
+          git push

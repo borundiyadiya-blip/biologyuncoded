@@ -1,0 +1,22 @@
+{#- Defined once per page, near the top of <body>, and referenced by every
+    divider below via url(#helix-strand). Two crossing sine strands with base
+    pair rungs between them — a double helix flattened to a hairline.
+
+    A <pattern> rather than a repeating CSS gradient because gradients cannot
+    describe a curve, and rather than one stretched SVG because
+    preserveAspectRatio="none" would squash the helix at narrow widths. As a
+    tile it keeps its proportions at every screen size.
+
+    Purely decorative: hidden from assistive tech, and it carries no meaning
+    that the text does not already carry. -#}
+<svg class="svg-defs" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <pattern id="helix-strand" width="52" height="18" patternUnits="userSpaceOnUse">
+      {#- The rungs sit behind the strands so the strands read as continuous. -#}
+      <line x1="13" y1="4.6" x2="13" y2="13.4" stroke="var(--rule-str)" stroke-width="1.1" stroke-linecap="round"/>
+      <line x1="39" y1="4.6" x2="39" y2="13.4" stroke="var(--rule-str)" stroke-width="1.1" stroke-linecap="round"/>
+      <path d="M0 9 Q 13 1 26 9 T 52 9" fill="none" stroke="var(--blue-lt)" stroke-width="1.6"/>
+      <path d="M0 9 Q 13 17 26 9 T 52 9" fill="none" stroke="var(--blue)" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+</svg>

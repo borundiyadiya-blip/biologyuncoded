@@ -8,6 +8,9 @@
     "import": "node tools/import-wordpress.mjs",
     "import:wpcom": "node tools/import-wpcom.mjs",
     "fonts": "node tools/fetch-fonts.mjs",
+    "research": "node tools/research.mjs",
+    "write": "node tools/write-post.mjs",
+    "newsletter": "node tools/newsletter.mjs",
     "check": "node tools/check-links.mjs",
     "tidy": "node tools/tidy-posts.mjs",
     "clean": "node tools/clean.mjs"
@@ -16,11 +19,12 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@anthropic-ai/sdk": "^0.120.0",
     "luxon": "^3.7.2",
     "markdown-it-anchor": "^9.2.1",
-    "markdown-it-footnote": "^4.0.0"
+    "markdown-it-footnote": "^4.0.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "fast-xml-parser": "^5.11.0",

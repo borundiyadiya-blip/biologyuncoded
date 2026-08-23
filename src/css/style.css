@@ -1,10 +1,13 @@
 /* ============================================================================
    Biology Uncoded
 
-   Palette is lifted from the conventions of a differential-expression figure:
-   the neutral grey of a non-significant gene, the blue of downregulation, the
-   red of upregulation. Blue carries every interactive state; red is reserved
-   for genuine emphasis so it keeps its meaning.
+   Blue and white, in shades. One hue family (around 205°) carries everything:
+   white paper, pale blue washes for raised surfaces, deep navy for text, and a
+   mid blue for every interactive state. A single warm accent survives for
+   genuine emphasis, so that when something is red it still means something.
+
+   Every value below is contrast-checked against the surface it sits on: body
+   text and small print clear 4.5:1, interactive outlines clear 3:1.
 
    Type inverts the usual blog pairing on purpose. Headings are monospace —
    the register of FASTA files, terminal output, and Slurm logs — and the body
@@ -12,21 +15,21 @@
    ========================================================================= */
 
 :root {
-  --paper:    #fcfbf9;
-  --paper-2:  #f3f0ea;
-  --ink:      #14181c;
-  --ink-2:    #3d464f;
-  /* Was #6f7a86, which is 4.26:1 on paper — below the 4.5:1 minimum, and it
-     carries every date, byline and count on the site at ~13px. */
-  --grey:     #5f6a76;
-  --rule:     #e4ded4;
-  /* Borders that outline an interactive chip need 3:1, which --rule can't
-     give without making every decorative hairline heavy. */
-  --rule-str: #9a9186;
-  --down:     #1a6ca6;
-  --down-2:   #12527f;
-  --up:       #a2221a;
-  --tint:     rgba(26, 108, 166, 0.06);
+  --paper:    #ffffff;
+  --paper-2:  #f2f7fb;   /* palest wash: raised cards, code, table stripes */
+  --paper-3:  #e3eef7;   /* one step up: subscribe panel, hovered surfaces */
+  --ink:      #0d1b2a;   /* 17.4:1 on white */
+  --ink-2:    #33506b;   /*  8.4:1 — secondary prose */
+  --grey:     #5a7189;   /*  5.1:1 — dates, counts, captions at ~13px */
+  --rule:     #d4e4f0;   /* decorative hairlines only */
+  /* Outlines around interactive chips need 3:1, which --rule cannot give
+     without making every decorative hairline heavy. */
+  --rule-str: #6f8fae;   /*  3.4:1 */
+  --blue:     #15629b;   /*  6.5:1 — links and every interactive state */
+  --blue-dk:  #0f4b78;   /*  9.4:1 — hover */
+  --blue-lt:  #3b8fd0;   /* decorative only: helix strands, rails */
+  --accent:   #a2221a;   /* reserved for genuine emphasis */
+  --tint:     rgba(21, 98, 155, 0.07);
 
   --measure: 68ch;
   --gutter: clamp(1.15rem, 5vw, 2.5rem);
@@ -48,17 +51,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper:   #0e1216;
-    --paper-2: #161c22;
-    --ink:     #e7ebef;
-    --ink-2:   #a9b4bf;
-    --grey:    #8d98a4;
-    --rule:    #252d35;
-    --rule-str: #4a5563;
-    --down:    #66b4e8;
-    --down-2:  #8fcbf3;
-    --up:      #e8796d;
-    --tint:    rgba(102, 180, 232, 0.09);
+    /* Same hue family, inverted: navy paper, pale blue ink. */
+    --paper:   #08131f;
+    --paper-2: #0f2033;
+    --paper-3: #16304a;
+    --ink:     #e9f2fa;
+    --ink-2:   #adc8de;
+    --grey:    #8ba6bf;
+    --rule:    #1d3149;
+    --rule-str: #46647f;
+    --blue:    #6fb6ea;
+    --blue-dk: #9bcef5;
+    --blue-lt: #4f9ad4;
+    --accent:  #e8796d;
+    --tint:    rgba(111, 182, 234, 0.10);
   }
 }
 
@@ -94,11 +100,11 @@ body {
   padding-inline: var(--gutter);
 }
 
-a { color: var(--down); text-decoration-thickness: 1px; text-underline-offset: 2.5px; }
-a:hover { color: var(--down-2); }
+a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 2.5px; }
+a:hover { color: var(--blue-dk); }
 
 :focus-visible {
-  outline: 2px solid var(--down);
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
   border-radius: 1px;
 }
@@ -119,13 +125,23 @@ a:hover { color: var(--down-2); }
 /* --- signature: the sequence-track rule ---------------------------------- */
 /* Even ticks at a 7px pitch, with every fourth tick picked out in blue —
    a read-depth track flattened into a hairline. Used as every major divider. */
-.acgt {
-  height: 7px;
-  background-image:
-    repeating-linear-gradient(90deg, var(--down) 0 1px, transparent 1px 28px),
-    repeating-linear-gradient(90deg, var(--rule) 0 1px, transparent 1px 7px);
-  opacity: 0.9;
+/* The <defs> carrier: present in the DOM so the pattern resolves, but it must
+   occupy no space and never be announced. */
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
+
+.helix {
+  display: block;
+  width: 100%;
+  height: 18px;
+  opacity: 0.85;
+}
+
+/* Inside the measure rather than bleeding edge to edge. */
 .wrap-rule {
   max-width: var(--measure);
   margin: 2.6rem auto;
@@ -158,7 +174,7 @@ a:hover { color: var(--down-2); }
   color: var(--grey);
   margin-top: 0.15rem;
 }
-.wordmark:hover .wordmark-name { color: var(--down); }
+.wordmark:hover .wordmark-name { color: var(--blue); }
 
 .nav {
   display: flex;
@@ -167,8 +183,8 @@ a:hover { color: var(--down-2); }
   font-size: var(--step--1);
 }
 .nav a { color: var(--ink-2); text-decoration: none; }
-.nav a:hover { color: var(--down); text-decoration: underline; }
-.nav a[aria-current="page"] { color: var(--ink); border-bottom: 2px solid var(--down); }
+.nav a:hover { color: var(--blue); text-decoration: underline; }
+.nav a[aria-current="page"] { color: var(--ink); border-bottom: 2px solid var(--blue); }
 
 /* --- shared bits --------------------------------------------------------- */
 .eyebrow {
@@ -214,7 +230,7 @@ a:hover { color: var(--down-2); }
   text-wrap: balance;
 }
 .lead-title a { color: var(--ink); text-decoration: none; }
-.lead-title a:hover { color: var(--down); }
+.lead-title a:hover { color: var(--blue); }
 .lead-excerpt { color: var(--ink-2); margin: 0 0 1.3rem; font-size: var(--step-1); line-height: 1.5; }
 
 .readon {
@@ -229,7 +245,7 @@ a:hover { color: var(--down-2); }
   letter-spacing: 0.01em;
   transition: background 0.15s ease, transform 0.15s ease;
 }
-.readon:hover { background: var(--down); color: #fff; }
+.readon:hover { background: var(--blue); color: #fff; }
 .readon:active { transform: translateY(1px); }
 
 /* --- post lists ---------------------------------------------------------- */
@@ -251,7 +267,7 @@ a:hover { color: var(--down-2); }
   top: 1.65rem;
   bottom: 1.65rem;
   width: 2px;
-  background: var(--down);
+  background: var(--blue);
   opacity: 0;
   transition: opacity 0.18s ease;
 }
@@ -268,7 +284,7 @@ a:hover { color: var(--down-2); }
   text-wrap: balance;
 }
 .postlist-title a { color: var(--ink); text-decoration: none; }
-.postlist-title a:hover { color: var(--down); text-decoration: underline; }
+.postlist-title a:hover { color: var(--blue); text-decoration: underline; }
 .postlist-excerpt { margin: 0; color: var(--ink-2); font-size: var(--step-0); }
 .postlist-item .eyebrow { margin-bottom: 0.35rem; }
 
@@ -314,7 +330,7 @@ a:hover { color: var(--down-2); }
   padding-top: 0.22em;
 }
 .archivelist a { color: var(--ink); text-decoration: none; }
-.archivelist a:hover { color: var(--down); text-decoration: underline; }
+.archivelist a:hover { color: var(--blue); text-decoration: underline; }
 
 @media (max-width: 34rem) {
   .archivelist li { grid-template-columns: 1fr; gap: 0.1rem; }
@@ -342,7 +358,7 @@ a:hover { color: var(--down-2); }
   padding: 0.32rem 0.6rem;
   transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
-.cloud-tag:hover { border-color: var(--down); background: var(--tint); color: var(--down); }
+.cloud-tag:hover { border-color: var(--blue); background: var(--tint); color: var(--blue); }
 .cloud-count { font-size: 0.72em; color: var(--grey); }
 
 .taglist { list-style: none; display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0; padding: 0; }
@@ -356,7 +372,7 @@ a:hover { color: var(--down-2); }
   padding: 0.24rem 0.5rem;
   transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
-.tag:hover { border-color: var(--down); background: var(--tint); color: var(--down); }
+.tag:hover { border-color: var(--blue); background: var(--tint); color: var(--blue); }
 
 /* --- reading progress: a coverage track ---------------------------------- */
 .coverage {
@@ -371,7 +387,7 @@ a:hover { color: var(--down-2); }
   display: block;
   width: 100%;
   height: 0;
-  background: var(--down);
+  background: var(--blue);
 }
 @media (max-width: 60rem) {
   .coverage { inset: 0 0 auto 0; width: auto; height: 3px; }
@@ -422,7 +438,7 @@ a:hover { color: var(--down-2); }
 .prose h2:hover .header-anchor,
 .prose h3:hover .header-anchor,
 .header-anchor:focus-visible { opacity: 1; }
-.header-anchor:hover { color: var(--down); }
+.header-anchor:hover { color: var(--blue); }
 
 .prose ul, .prose ol { margin: 0 0 1.25em; padding-left: 1.4em; }
 .prose li { margin-bottom: 0.4em; }
@@ -430,7 +446,7 @@ a:hover { color: var(--down-2); }
 .prose blockquote {
   margin: 1.8em 0;
   padding: 0.2em 0 0.2em 1.2em;
-  border-left: 3px solid var(--down);
+  border-left: 3px solid var(--blue);
   color: var(--ink-2);
   font-style: italic;
 }
@@ -447,13 +463,24 @@ a:hover { color: var(--down-2); }
   border-left: 2px solid var(--rule);
 }
 
+/* The same helix as the page dividers. An <hr> cannot hold an SVG child, so
+   here it is a tiled background image. Colours are baked in rather than
+   var()-driven — a data URI has no access to the custom properties — so the
+   dark palette gets its own copy below. */
 .prose hr {
   border: 0;
-  height: 7px;
+  height: 18px;
   margin: 2.8em 0;
-  background-image:
-    repeating-linear-gradient(90deg, var(--down) 0 1px, transparent 1px 28px),
-    repeating-linear-gradient(90deg, var(--rule) 0 1px, transparent 1px 7px);
+  opacity: 0.85;
+  background-repeat: repeat-x;
+  background-size: 52px 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='18'%3E%3Cline x1='13' y1='4.6' x2='13' y2='13.4' stroke='%236f8fae' stroke-width='1.1' stroke-linecap='round'/%3E%3Cline x1='39' y1='4.6' x2='39' y2='13.4' stroke='%236f8fae' stroke-width='1.1' stroke-linecap='round'/%3E%3Cpath d='M0 9 Q 13 1 26 9 T 52 9' fill='none' stroke='%233b8fd0' stroke-width='1.6'/%3E%3Cpath d='M0 9 Q 13 17 26 9 T 52 9' fill='none' stroke='%2315629b' stroke-width='1.6'/%3E%3C/svg%3E");
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose hr {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='18'%3E%3Cline x1='13' y1='4.6' x2='13' y2='13.4' stroke='%2346647f' stroke-width='1.1' stroke-linecap='round'/%3E%3Cline x1='39' y1='4.6' x2='39' y2='13.4' stroke='%2346647f' stroke-width='1.1' stroke-linecap='round'/%3E%3Cpath d='M0 9 Q 13 1 26 9 T 52 9' fill='none' stroke='%234f9ad4' stroke-width='1.6'/%3E%3Cpath d='M0 9 Q 13 17 26 9 T 52 9' fill='none' stroke='%236fb6ea' stroke-width='1.6'/%3E%3C/svg%3E");
+  }
 }
 
 .prose table {
@@ -505,9 +532,9 @@ a:hover { color: var(--down-2); }
 /* Prism tokens, kept to the site palette rather than a stock theme. */
 .token.comment, .token.prolog, .token.doctype, .token.cdata { color: var(--grey); font-style: italic; }
 .token.punctuation { color: var(--ink-2); }
-.token.string, .token.char, .token.attr-value { color: var(--up); }
-.token.number, .token.boolean, .token.constant { color: var(--up); }
-.token.keyword, .token.selector, .token.important, .token.atrule { color: var(--down); font-weight: 500; }
+.token.string, .token.char, .token.attr-value { color: var(--accent); }
+.token.number, .token.boolean, .token.constant { color: var(--accent); }
+.token.keyword, .token.selector, .token.important, .token.atrule { color: var(--blue); font-weight: 500; }
 .token.function, .token.class-name { color: var(--ink); font-weight: 600; }
 .token.operator, .token.entity, .token.variable { color: var(--ink-2); }
 
@@ -546,7 +573,7 @@ a:hover { color: var(--down-2); }
   border: 1px solid var(--rule);
   padding: 0.85rem 1rem;
 }
-.pager-link:hover { border-color: var(--down); }
+.pager-link:hover { border-color: var(--blue); }
 .pager-link.next { grid-column: 2; text-align: right; }
 .pager-dir {
   display: block;
@@ -583,4 +610,91 @@ a:hover { color: var(--down-2); }
   margin: 0;
 }
 .footer-meta a { color: var(--grey); }
-.footer-meta a:hover { color: var(--down); }
+.footer-meta a:hover { color: var(--blue); }
+
+/* --- subscribe ------------------------------------------------------------ */
+/* A raised panel in the palest blue, edged in the helix so it reads as part of
+   the same system rather than a bolted-on marketing box. */
+.subscribe {
+  margin: 3.5rem 0 0;
+  background: var(--paper-2);
+  border-block: 1px solid var(--rule);
+}
+.subscribe-inner {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding: 2.2rem var(--gutter) 2.4rem;
+}
+.subscribe-title {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: var(--step-2);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.6rem;
+  text-wrap: balance;
+}
+.subscribe-blurb {
+  margin: 0 0 1.4rem;
+  color: var(--ink-2);
+  max-width: 54ch;
+}
+
+/* Visible label, not a placeholder standing in for one: placeholders vanish on
+   focus and are not reliably announced. */
+.subscribe-label {
+  display: block;
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--grey);
+  margin-bottom: 0.45rem;
+}
+
+.subscribe-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: stretch;
+}
+.subscribe-input {
+  flex: 1 1 16rem;
+  min-width: 0;
+  font: inherit;
+  font-size: var(--step-0);
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule-str);
+  border-radius: 3px;
+  padding: 0.62rem 0.8rem;
+}
+.subscribe-input::placeholder { color: var(--grey); opacity: 1; }
+.subscribe-input:focus-visible { border-color: var(--blue); }
+
+.subscribe-button {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  padding: 0.62rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.subscribe-button:hover { background: var(--blue-dk); border-color: var(--blue-dk); }
+.subscribe-button:active { transform: translateY(1px); }
+
+.subscribe-fine {
+  margin: 0.85rem 0 0;
+  font-family: var(--sans);
+  font-size: var(--step--1);
+  color: var(--grey);
+}
+
+@media (max-width: 30rem) {
+  .subscribe-button { width: 100%; }
+}
