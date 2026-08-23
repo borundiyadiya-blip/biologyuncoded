@@ -1,0 +1,28 @@
+{
+  "name": "biologyuncoded",
+  "version": "1.0.0",
+  "description": "Biology Uncoded — a static blog built with Eleventy.",
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "build": "eleventy",
+    "import": "node tools/import-wordpress.mjs",
+    "clean": "rm -rf _site"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "luxon": "^3.7.2",
+    "markdown-it-anchor": "^9.2.1",
+    "markdown-it-footnote": "^4.0.0"
+  },
+  "devDependencies": {
+    "fast-xml-parser": "^5.11.0",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "private": true,
+  "type": "module"
+}

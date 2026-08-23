@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+---
+<div class="coverage" aria-hidden="true"><span id="coverage-fill"></span></div>
+
+<article class="post wrap">
+
+  <header class="post-head">
+    <p class="eyebrow">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      <span class="sep">/</span>
+      {{ content | readingTime }} min read
+    </p>
+    <h1 class="post-title">{{ title }}</h1>
+    {% if description %}<p class="standfirst">{{ description }}</p>{% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+
+  {% set realTags = [] %}
+  {% for t in tags %}{% if t != 'posts' and t != 'all' %}{% set realTags = (realTags.push(t), realTags) %}{% endif %}{% endfor %}
+  {% if realTags.length %}
+  <footer class="post-foot">
+    <h2 class="foot-label">Filed under</h2>
+    <ul class="taglist">
+      {% for t in realTags %}
+      <li><a class="tag" href="{{ ('/topics/' + (t | slugifyTag) + '/') | url }}">{{ t }}</a></li>
+      {% endfor %}
+    </ul>
+  </footer>
+  {% endif %}
+
+  {% set posts = collections.posts %}
+  {% set idx = null %}
+  {% for p in posts %}{% if page.url and p.url == page.url %}{% set idx = loop.index0 %}{% endif %}{% endfor %}
+  {% if idx != null %}
+  <nav class="pager" aria-label="More posts">
+    {% if posts[idx + 1] %}
+    <a class="pager-link prev" href="{{ posts[idx + 1].url | url }}">
+      <span class="pager-dir">Older</span>
+      <span class="pager-title">{{ posts[idx + 1].data.title }}</span>
+    </a>
+    {% endif %}
+    {% if posts[idx - 1] %}
+    <a class="pager-link next" href="{{ posts[idx - 1].url | url }}">
+      <span class="pager-dir">Newer</span>
+      <span class="pager-title">{{ posts[idx - 1].data.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+</article>
+
+<script src="{{ '/js/coverage.js' | url }}" defer></script>

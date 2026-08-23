@@ -1,0 +1,7 @@
+node_modules/
+_site/
+.cache/
+.DS_Store
+*.log
+# WordPress exports can be large; keep the source of truth, not the dump
+wordpress-export*.xml

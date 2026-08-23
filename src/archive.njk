@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Archive
+permalink: /archive/index.html
+---
+<section class="wrap page-head">
+  <h1 class="page-title">Archive</h1>
+  <p class="page-sub">Every post, newest first — {{ collections.posts.length }} in total.</p>
+</section>
+
+<section class="wrap">
+  {% for group in collections.postsByYear %}
+  <div class="yeargroup">
+    <h2 class="yearlabel">{{ group.year }}<span class="yearcount">{{ group.posts.length }}</span></h2>
+    <ul class="archivelist">
+      {% for p in group.posts %}
+      <li>
+        <time datetime="{{ p.date | isoDate }}">{{ p.date | shortDate }}</time>
+        <a href="{{ p.url | url }}">{{ p.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>

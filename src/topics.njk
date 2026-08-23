@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: Topics
+permalink: /topics/index.html
+---
+<section class="wrap page-head">
+  <h1 class="page-title">Topics</h1>
+  <p class="page-sub">{{ collections.tagList.length }} topics across {{ collections.posts.length }} posts. Larger means more written about it.</p>
+</section>
+
+<section class="wrap">
+  <ul class="cloud">
+    {% for t in collections.tagList %}
+    <li>
+      <a class="cloud-tag" href="{{ ('/topics/' + (t.name | slugifyTag) + '/') | url }}" style="--w: {{ t.count }}">
+        {{ t.name }}<span class="cloud-count">{{ t.count }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
