@@ -1,6 +1,6 @@
 ---
 title: "CRISPR Technology: The Gene-Editing Breakthrough Shaping Our Future"
-date: 2025-03-22
+date: 2025-03-21
 description: "Imagine a world where genetic diseases like sickle cell anaemia and cystic fibrosis could be erased before birth. Or where crops could be engineered to resist pests without the need for harmful pesticides."
 tags:
   - "Gene editing"

@@ -1,6 +1,6 @@
 ---
 title: "Creating Organs with Stem Cells: The Future of Transplants"
-date: 2025-06-26
+date: 2025-06-25
 description: "Imagine a world where patients waiting for organ transplants no longer rely on donor lists. Instead, doctors could grow a new kidney, liver, or even a heart—tailored from a patient’s own cells."
 tags:
   - "Cells and tissue"

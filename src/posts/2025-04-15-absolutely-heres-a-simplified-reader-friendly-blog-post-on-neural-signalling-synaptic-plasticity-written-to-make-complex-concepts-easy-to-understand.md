@@ -1,6 +1,6 @@
 ---
 title: "Neural Signalling & Synaptic Plasticity: How Your Brain Talks and Learns"
-date: 2025-04-16
+date: 2025-04-15
 description: "Your brain is talking to itself—constantly. Every thought you have, every movement you make, and every memory you recall happens because your brain cells (called neurons) are sending messages to each other."
 tags:
   - "Mental health"

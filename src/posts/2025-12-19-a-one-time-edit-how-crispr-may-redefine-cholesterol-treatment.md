@@ -1,6 +1,6 @@
 ---
 title: "A One-Time Edit: How CRISPR May Redefine Cholesterol Treatment"
-date: 2025-12-20
+date: 2025-12-19
 description: "For decades, managing high cholesterol has meant lifelong adherence to daily pills or periodic injections—an effective but imperfect strategy in a world where medication adherence steadily declines over time."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/12/19/a-one-time-edit-how-crispr-may-redefine-cholesterol-treatment/"
 ---

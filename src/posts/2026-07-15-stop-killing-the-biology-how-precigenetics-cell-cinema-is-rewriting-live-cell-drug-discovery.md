@@ -1,6 +1,6 @@
 ---
 title: "Stop Killing the Biology: How Precigenetics’ \"Cell Cinema\" is Rewriting Live-Cell Drug Discovery"
-date: 2026-07-16
+date: 2026-07-15
 description: "For decades, drug discovery has operated under a profound paradox: to understand how living systems respond to a new drug, we routinely destroy them."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/15/stop-killing-the-biology-how-precigenetics-cell-cinema-is-rewriting-live-cell-drug-discovery/"
 ---

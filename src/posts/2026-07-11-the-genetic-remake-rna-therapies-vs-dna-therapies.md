@@ -1,6 +1,6 @@
 ---
 title: "The Genetic Remake: RNA Therapies vs. DNA Therapies"
-date: 2026-07-12
+date: 2026-07-11
 description: "Not too long ago, the phrase “genetic medicine” sounded like something straight out of a sci-fi flick. Today, it’s dominating headlines, changing lives, and revolutionizing how we…"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/11/the-genetic-remake-rna-therapies-vs-dna-therapies/"
 ---

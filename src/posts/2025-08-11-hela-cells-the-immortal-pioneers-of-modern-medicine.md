@@ -1,6 +1,6 @@
 ---
 title: "HeLa Cells: The Immortal Pioneers of Modern Medicine"
-date: 2025-08-12
+date: 2025-08-11
 description: "In 1951, a 31-year-old African American woman named Henrietta Lacks went to Johns Hopkins Hospital seeking treatment for an aggressive form of cervical cancer."
 tags:
   - "Cells and tissue"

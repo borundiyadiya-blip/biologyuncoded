@@ -1,6 +1,6 @@
 ---
 title: "Illuminating the Invisible: How Harvard Scientists Are Rewriting the Future of Medicine"
-date: 2025-11-26
+date: 2025-11-25
 description: "Antibiotic resistance remains one of the deadliest biological crises on Earth, responsible for more than 1.3 million deaths each year."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/11/25/illuminating-the-invisible-how-harvard-scientists-are-rewriting-the-future-of-medicine/"
 ---

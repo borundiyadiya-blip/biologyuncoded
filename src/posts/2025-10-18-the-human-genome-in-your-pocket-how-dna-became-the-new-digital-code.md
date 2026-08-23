@@ -1,6 +1,6 @@
 ---
 title: "The Human Genome in Your Pocket: How DNA Became the New Digital Code"
-date: 2025-10-19
+date: 2025-10-18
 description: "Imagine holding the code for life — not metaphorically, but literally — in the palm of your hand. Your smartphone, a device built from silicon and electricity, now has enough memory to…"
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/10/18/the-human-genome-in-your-pocket-how-dna-became-the-new-digital-code/"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Stopping Kidney Stones at the Source: A Promising New Approach from Stanford"
-date: 2026-03-07
+date: 2026-03-06
 description: "Anyone who has ever had a kidney stone knows the drill: excruciating pain (often compared to childbirth), emergency room visits, and the looming anxiety that another one could strike at any moment."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/03/06/stopping-kidney-stones-at-the-source-a-promising-new-approach-from-stanford/"
 ---

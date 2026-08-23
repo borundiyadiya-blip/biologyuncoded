@@ -137,7 +137,11 @@ const slugify = (s) =>
     .trim()
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
-    .slice(0, 80);
+    // Only a sanity cap, and it cuts on a hyphen so a slug never ends
+    // mid-word. These are the live URLs and they have to keep matching the
+    // WordPress ones, or every link already shared out in the world breaks.
+    .replace(/^(.{0,120})(-.*)?$/s, "$1")
+    .replace(/^-|-$/g, "");
 
 const pad = (n) => String(n).padStart(2, "0");
 
@@ -240,9 +244,10 @@ const stats = { posts: 0, pages: 0, existing: 0 };
 async function writeItem(item, kind) {
   const title = decode(item.title?.rendered || "").trim() || "Untitled";
 
-  const date = new Date(
-    item.date_gmt ? `${item.date_gmt}Z`.replace(/Z+$/, "Z") : item.date
-  );
+  // item.date is the site's local publish time, which is what WordPress uses
+  // to build /YYYY/MM/DD/ in the permalink. Using date_gmt instead puts posts
+  // published in the evening a day ahead, and the date is part of the URL.
+  const date = new Date(`${item.date || item.date_gmt}Z`.replace(/Z+$/, "Z"));
   if (isNaN(date)) {
     console.warn(`    no usable date for "${title.slice(0, 40)}" — skipping`);
     return;

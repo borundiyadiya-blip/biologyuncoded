@@ -1,6 +1,6 @@
 ---
 title: "Mapping the Cellular Matrix: A Deep Dive into STAR Alignment"
-date: 2026-07-16
+date: 2026-07-15
 description: "Imagine trying to reconstruct a complex puzzle, but half the pieces have been cut in two, shuffled, and scattered across a massive blueprint."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/07/15/mapping-the-cellular-matrix-a-deep-dive-into-star-alignment/"
 ---

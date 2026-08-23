@@ -1,6 +1,6 @@
 ---
 title: "NEW UPDATE: CRISPR VS. Cholesterol: The First Steps Toward Permanent Heart-Disease Prevention"
-date: 2025-11-20
+date: 2025-11-19
 description: "For decades, high cholesterol has been treated as a lifelong negotiation with pills, diets, and reminders that slip through the cracks of busy lives."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2025/11/19/new-update-crispr-vs-cholesterol-the-first-steps-toward-permanent-heart-disease-prevention/"
 ---

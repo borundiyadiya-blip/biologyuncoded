@@ -1,6 +1,6 @@
 ---
 title: "Breakthrough in Pancreatic Cancer Treatment: FDA Accepts NDA for Daraxonrasib (RMC-6236)"
-date: 2026-08-13
+date: 2026-08-12
 description: "The landscape of oncology drug development is shifting dramatically toward precision therapeutics capable of targeting previously “undruggable” genetic mutations."
 wordpressUrl: "https://biologyuncoded.wordpress.com/2026/08/12/breakthrough-in-pancreatic-cancer-treatment-fda-accepts-nda-for-daraxonrasib-rmc-6236/"
 ---

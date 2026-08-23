@@ -1,6 +1,6 @@
 ---
 title: "The Biology of Addiction: What Happens in the Brain?"
-date: 2025-04-16
+date: 2025-04-15
 description: "Addiction is often misunderstood. To some, it looks like a failure of willpower. To others, it’s simply a bad habit."
 tags:
   - "Neuroscience"
