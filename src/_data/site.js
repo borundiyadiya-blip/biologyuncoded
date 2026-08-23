@@ -5,10 +5,10 @@ export default {
   description: "Breaking biology's biggest mysteries into digestible bits",
 
   // No trailing slash. Change this when you move to a custom domain.
-  // GitHub Pages project site: https://USERNAME.github.io/biologyuncoded
-  // GitHub Pages user site:    https://USERNAME.github.io
+  // GitHub Pages project site: https://borundiyadiya-blip.github.io/biologyuncoded
+  // GitHub Pages user site:    https://borundiyadiya-blip.github.io
   // Custom domain:             https://biologyuncoded.com
-  url: process.env.SITE_URL || "https://example.github.io/biologyuncoded",
+  url: process.env.SITE_URL || "https://borundiyadiya-blip.github.io/biologyuncoded",
 
   author: {
     name: "Diya Borundiya",
@@ -18,7 +18,7 @@ export default {
   // Any link left empty is simply not rendered.
   links: {
     email: "",
-    github: "",
+    github: "https://github.com/borundiyadiya-blip",
     linkedin: "",
     bluesky: "",
     scholar: "",
