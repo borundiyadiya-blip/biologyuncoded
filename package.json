@@ -4,9 +4,10 @@
   "description": "Biology Uncoded — a static blog built with Eleventy.",
   "scripts": {
     "start": "eleventy --serve --quiet",
-    "build": "eleventy",
+    "build": "npm run clean && eleventy",
     "import": "node tools/import-wordpress.mjs",
-    "clean": "rm -rf _site"
+    "import:wpcom": "node tools/import-wpcom.mjs",
+    "clean": "node tools/clean.mjs"
   },
   "author": "",
   "license": "ISC",
