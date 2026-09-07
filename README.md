@@ -271,41 +271,50 @@ the answer is greppable: `grep -L "generated: true" src/posts/*.md`.
 | Workflow | When | What |
 | --- | --- | --- |
 | `write-post.yml` | **manual only** | Research, write, build, link-check, commit |
-| `newsletter.yml` | Sundays 15:00 UTC | Digest of the week's posts → Buttondown |
+| `newsletter.yml` | **manual only** | Digest of recent posts → Buttondown |
 | `deploy.yml` | every push to `main` | Build and publish |
 
-**Nothing writes or publishes a post on its own.** `write-post.yml` has no
-schedule: it runs when you press **Run workflow** on the Actions tab, and not
-otherwise. Posts appear on the site because you decided they should.
+**Nothing here runs on a timer.** Neither workflow has a schedule: each runs
+when you press **Run workflow** on the Actions tab, and not otherwise. Posts
+appear on the site, and email reaches subscribers, because you decided so.
 
-GitHub's scheduler is best-effort and often runs a few minutes late. The
-newsletter has a dry-run option on its Run workflow button that prints the
-digest without sending it.
+The only automatic thing left is `deploy.yml`, which rebuilds and republishes
+the site when you push. That is just deployment — it publishes what is already
+in the repository and never creates anything.
 
-If a week has no published posts, the newsletter job exits without contacting
-Buttondown. Quiet weeks send nothing rather than an empty email — so with
-automatic writing off, it only sends in weeks you published something yourself.
+The newsletter's Run workflow button has a **dry run** option that builds and
+prints the digest without contacting Buttondown. Use it first. And if no posts
+went out in the window, the job exits without sending regardless, so it cannot
+mail an empty digest.
 
-### Turning autonomous publishing back on
+### Putting either back on a schedule
 
-Restore the schedule block at the top of `.github/workflows/write-post.yml`:
+Restore the schedule block at the top of the workflow file — the exact snippet
+is in a comment at the top of each one:
 
 ```yaml
+# .github/workflows/write-post.yml
 on:
   schedule:
     - cron: "0 12 * * 1,3,5"   # Mon, Wed, Fri at 12:00 UTC
   workflow_dispatch:
     ...
+
+# .github/workflows/newsletter.yml
+on:
+  schedule:
+    - cron: "0 15 * * 0"       # Sundays at 15:00 UTC
+  workflow_dispatch:
+    ...
 ```
 
-Worth pairing that with the workflow's `draft` input so scheduled runs land as
-drafts you release by hand, rather than going straight to the live site.
+For the writer, worth pairing that with the workflow's `draft` input so
+scheduled runs land as drafts you release by hand rather than going straight to
+the live site.
 
-### Turning the rest off
-
-Disable a workflow on the Actions tab, or delete the schedule block from the
-file. Nothing else depends on either — the site builds and deploys the same
-way regardless.
+Note that a scheduled workflow whose secret is missing fails on every firing,
+and GitHub emails you each time. If you restore a schedule, add the matching
+secret in the same sitting.
 
 ### A caveat worth keeping in mind
 

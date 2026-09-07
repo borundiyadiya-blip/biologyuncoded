@@ -1,11 +1,19 @@
 name: Weekly newsletter
 
-# Sundays at 15:00 UTC. If nothing was published that week the job exits
-# without contacting Buttondown, so quiet weeks send nothing rather than an
-# empty digest.
+# Manual only. The Sunday schedule was removed deliberately — no email leaves
+# this repo unless someone presses Run workflow on the Actions tab. The dry_run
+# input below builds and prints the digest without contacting Buttondown, which
+# is the safe way to see what it would say.
+#
+# To put it back on a weekly cadence, restore the schedule block:
+#
+#   schedule:
+#     - cron: "0 15 * * 0"   # Sundays at 15:00 UTC
+#
+# If nothing was published that week the job exits without contacting
+# Buttondown either way, so a quiet week sends nothing rather than an empty
+# digest.
 on:
-  schedule:
-    - cron: "0 15 * * 0"
   workflow_dispatch:
     inputs:
       dry_run:
