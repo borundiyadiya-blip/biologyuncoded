@@ -270,23 +270,42 @@ the answer is greppable: `grep -L "generated: true" src/posts/*.md`.
 
 | Workflow | When | What |
 | --- | --- | --- |
-| `write-post.yml` | Mon, Wed, Fri 12:00 UTC | Research, write, build, link-check, commit |
+| `write-post.yml` | **manual only** | Research, write, build, link-check, commit |
 | `newsletter.yml` | Sundays 15:00 UTC | Digest of the week's posts → Buttondown |
 | `deploy.yml` | every push to `main` | Build and publish |
 
-GitHub's scheduler is best-effort and often runs a few minutes late. Both
-scheduled workflows also have a **Run workflow** button on the Actions tab, and
-the newsletter has a dry-run option there that prints the digest without
-sending it.
+**Nothing writes or publishes a post on its own.** `write-post.yml` has no
+schedule: it runs when you press **Run workflow** on the Actions tab, and not
+otherwise. Posts appear on the site because you decided they should.
+
+GitHub's scheduler is best-effort and often runs a few minutes late. The
+newsletter has a dry-run option on its Run workflow button that prints the
+digest without sending it.
 
 If a week has no published posts, the newsletter job exits without contacting
-Buttondown. Quiet weeks send nothing rather than an empty email.
+Buttondown. Quiet weeks send nothing rather than an empty email — so with
+automatic writing off, it only sends in weeks you published something yourself.
 
-### Turning it off
+### Turning autonomous publishing back on
 
-Disable the workflow on the Actions tab, or delete the schedule block from the
-file. Nothing else depends on it — the site builds and deploys the same either
-way.
+Restore the schedule block at the top of `.github/workflows/write-post.yml`:
+
+```yaml
+on:
+  schedule:
+    - cron: "0 12 * * 1,3,5"   # Mon, Wed, Fri at 12:00 UTC
+  workflow_dispatch:
+    ...
+```
+
+Worth pairing that with the workflow's `draft` input so scheduled runs land as
+drafts you release by hand, rather than going straight to the live site.
+
+### Turning the rest off
+
+Disable a workflow on the Actions tab, or delete the schedule block from the
+file. Nothing else depends on either — the site builds and deploys the same
+way regardless.
 
 ### A caveat worth keeping in mind
 

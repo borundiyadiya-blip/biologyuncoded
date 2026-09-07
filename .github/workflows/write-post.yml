@@ -1,10 +1,17 @@
 name: Write a post
 
-# Monday, Wednesday and Friday at 12:00 UTC. GitHub's scheduler is best-effort
-# and can run late under load; it is not a precise cron.
+# Manual only. The Mon/Wed/Fri schedule was removed deliberately — nothing on
+# this repo writes or publishes a post on its own any more. It runs when someone
+# presses Run workflow on the Actions tab, and not otherwise.
+#
+# To turn autonomous publishing back on, restore the schedule block:
+#
+#   schedule:
+#     - cron: "0 12 * * 1,3,5"
+#
+# Consider pairing that with the --draft input below, so scheduled runs land as
+# drafts for review rather than going straight to the live site.
 on:
-  schedule:
-    - cron: "0 12 * * 1,3,5"
   workflow_dispatch:
     inputs:
       index:
